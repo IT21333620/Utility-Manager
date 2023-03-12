@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".models.electricity_manager">
+
+    <TextView
+        android:id="@+id/circle1"
+        android:layout_width="212dp"
+        android:layout_height="212dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="608dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/circle2"
+        android:layout_width="235dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginBottom="564dp"
+        android:background="@drawable/circle2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/elec_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/electricity_manager"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sqr1"
+        android:layout_width="227dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="92dp"
+        android:width="150dp"
+        android:height="150dp"
+        android:background="@drawable/squre1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sqr2"
+        android:layout_width="227dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="432dp"
+        android:layout_marginEnd="92dp"
+        android:width="150dp"
+        android:height="150dp"
+        android:background="@drawable/squre1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cir1"
+        android:layout_width="117dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="236dp"
+        android:background="@drawable/circle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cir"
+        android:layout_width="117dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="396dp"
+        android:layout_marginEnd="236dp"
+        android:background="@drawable/circle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/new_config"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/sqr1"
+        app:layout_constraintTop_toTopOf="@+id/sqr1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="219dp"
+        android:layout_height="197dp"
+
+        android:background="#00FFFFFF"
+        android:text="@string/new_config"
+        android:textSize="16sp"
+        app:icon="@drawable/arrow"
+        app:iconGravity="end"
+        app:iconPadding="20dp"
+        app:iconTint="@color/orange"
+        app:iconTintMode="src_in"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="436dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
