@@ -86,7 +86,7 @@
         android:layout_marginBottom="224dp"
         android:background="@color/gray"
         android:backgroundTint="@color/gray"
-        android:text="Track your fill-ups & save money.."
+        android:text="@string/theme"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
