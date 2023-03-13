@@ -2,4 +2,8 @@
     <string name="app_name">Utility Manager</string>
     <string name="electricity_manager">Electricity Management</string>
     <string name="new_config">Add new \n configuration</string>
+    <string name="fuel_manager">Fuel Management</string>
+    <string name="view_history">VIEW HISTORY</string>
+    <string name="setup_vehicle">SETUP VEHICLE</string>
+    <string name="theme">Track your fill-ups and save money..</string>
 </resources>
