@@ -15,6 +15,9 @@
             android:name=".History"
             android:exported="false" />
         <activity
+            android:name=".Networkmain"
+            android:exported="false" />
+        <activity
             android:name=".weekly_usage"
             android:exported="false" />
         <activity
