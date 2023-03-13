@@ -7,4 +7,25 @@
     <string name="setup_vehicle">SETUP VEHICLE</string>
     <string name="theme">Track your fill-ups and save money..</string>
     <string name="water_manager">Water Management</string>
+    <string name="user_information">User Information</string>
+    <string name="no_of_family_members">No of family members</string>
+    <string name="week">Week</string>
+    <string name="components">Components</string>
+    <string name="drinking">Drinking</string>
+    <string name="showering">Showering</string>
+    <string name="washing">Washing</string>
+    <string name="gardening">Gardening</string>
+    <string name="other">Other</string>
+    <string name="standard_values">Standard Values (liters)</string>
+    <string name="weekly_usage">Weekly Usage</string>
+    <string name="total_water_usage">Total Water Usage</string>
+    <string name="total_water_units">Total Water Units (liters/1000)</string>
+    <string name="weekly_cost">Weekly Cost = (1 unit*24)+(300)LKR</string>
+    <string name="gas">Gas</string>
+    <string name="Network">Network</string>
+    <string name="OtherUtilities">Other Utilities</string>
+    <string name="EntermonthlyData">Enter your monthly Data amount</string>
+    <string name="dataamount">0.00 MB</string>
+    <string name="Submit">SUBMIT</string>
+    <string name="view_config">View \nConfiguration</string>
 </resources>
