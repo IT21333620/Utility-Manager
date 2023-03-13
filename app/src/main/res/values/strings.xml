@@ -21,4 +21,6 @@
     <string name="total_water_usage">Total Water Usage</string>
     <string name="total_water_units">Total Water Units (liters/1000)</string>
     <string name="weekly_cost">Weekly Cost = (1 unit*24)+(300)LKR</string>
+    <string name="view_water_bill">VIEW WATER BILL</string>
+    <string name="history">History</string>
 </resources>
