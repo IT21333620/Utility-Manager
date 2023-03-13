@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".models.Networkmain">
+
+    <TextView
+        android:id="@+id/sqr"
+        android:layout_width="292dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="60dp"
+        android:width="150dp"
+        android:height="150dp"
+        android:background="@drawable/squre1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/circle8"
+        android:layout_width="235dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginBottom="564dp"
+        android:background="@drawable/circle2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/circle7"
+        android:layout_width="212dp"
+        android:layout_height="212dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="608dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="86dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/unnamed_removebg_preview" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="140dp"
+        android:text="@string/Network"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="192dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="108dp"
+        android:text="@string/EntermonthlyData"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/dataamount"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/sqr"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
+        android:text="@string/Submit"
+        app:cornerRadius="10dp"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
