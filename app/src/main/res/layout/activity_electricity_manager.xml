@@ -109,7 +109,7 @@
         app:iconPadding="20dp"
         app:iconTint="@color/orange"
         app:iconTintMode="src_in"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="436dp" />
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="432dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
