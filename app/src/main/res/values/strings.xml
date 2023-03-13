@@ -21,4 +21,10 @@
     <string name="total_water_usage">Total Water Usage</string>
     <string name="total_water_units">Total Water Units (liters/1000)</string>
     <string name="weekly_cost">Weekly Cost = (1 unit*24)+(300)LKR</string>
+    <string name="gas">Gas</string>
+    <string name="Network">Network</string>
+    <string name="OtherUtilities">Other Utilities</string>
+    <string name="EntermonthlyData">Enter your monthly Data amount</string>
+    <string name="dataamount">0.00 MB</string>
+    <string name="Submit">SUBMIT</string>
 </resources>
