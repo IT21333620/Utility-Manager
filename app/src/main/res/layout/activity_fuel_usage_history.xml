@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".models.fuel_usage_history">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="414dp"
+        android:layout_height="79dp"
+        android:background="@color/gray"
+        android:paddingTop="16dp"
+        android:text="@string/fuel_history"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="124dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

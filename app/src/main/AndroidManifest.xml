@@ -12,25 +12,37 @@
         android:theme="@style/Theme.UtilityManager"
         tools:targetApi="31">
         <activity
-            android:name=".Networkmain"
+            android:name=".usage_update"
             android:exported="false" />
         <activity
-            android:name=".weekly_usage"
+            android:name=".fuel_usage_history"
             android:exported="false" />
         <activity
-            android:name=".user_information"
+            android:name=".remaining_fuel"
             android:exported="false" />
         <activity
-            android:name=".other_utilities"
+            android:name=".models.weekly_usage"
             android:exported="false" />
         <activity
-            android:name=".fuel_management"
+            android:name=".models.Networkmain"
             android:exported="false" />
         <activity
-            android:name=".water_management"
+            android:name=".models.weekly_usage"
             android:exported="false" />
         <activity
-            android:name=".electricity_manager"
+            android:name=".models.user_information"
+            android:exported="false" />
+        <activity
+            android:name=".models.other_utilities"
+            android:exported="false" />
+        <activity
+            android:name=".models.fuel_management"
+            android:exported="true" />
+        <activity
+            android:name=".models.water_management"
+            android:exported="false" />
+        <activity
+            android:name=".models.electricity_manager"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

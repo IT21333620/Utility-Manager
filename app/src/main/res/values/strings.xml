@@ -62,4 +62,28 @@
     <string name="view_config">View \nConfiguration</string>
     <string name="view_monthly_bill">VIEW MONTHLY BILL</string>
     <string name="history">History</string>
+    <string name="fuel_usage">Weekly Fuel Usage</string>
+    <string name="usage">Fuel usage per KM</string>
+    <string name="usage_value">km/ltr</string>
+    <string name="distance">Distance Travelled</string>
+    <string name="distance_value">km</string>
+    <string name="filled">Fuel Amount(filled)</string>
+    <string name="filled_value">liters</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="remains">Remaining</string>
+    <string name="fuel_used">Fuel Used(L)</string>
+    <string name="used_value">15</string>
+    <string name="remain">Remaining(L)</string>
+    <string name="remain_value">5</string>
+    <string name="fuel_price">Fuel price (per liter)</string>
+    <string name="price_value">400</string>
+    <string name="week_cost">Weekly cost (LKR)</string>
+    <string name="cost">6000</string>
+    <string name="fuel_history">Fuel Usage History</string>
+    <string name="usage_update">Weekly Fuel Usage Update</string>
+    <string name="kmltr">12</string>
+    <string name="km">50</string>
+    <string name="liters">10</string>
+    <string name="calnup">CALCULATE &amp; UPDATE</string>
+
 </resources>
