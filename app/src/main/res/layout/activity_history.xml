@@ -4,29 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".models.History">
+    tools:context=".models.weekly_history">
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.742" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="652dp"
+        android:layout_marginEnd="92dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="88dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext6"
+        android:layout_width="73dp"
+        android:layout_height="50dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="72dp"
+        android:background="#00FFFFFF"
+        android:text="@string/new_config"
+        android:textColor="@color/orange"
+        android:textSize="0sp"
+        android:textStyle="bold"
+        app:icon="@drawable/arrow"
+        app:iconGravity="textEnd"
+        app:iconSize="100dp"
+        app:iconTint="@color/orange"
+        app:iconTintMode="src_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/circle10"
+        android:layout_width="235dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginBottom="576dp"
+        android:background="@drawable/circle2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/elec_manager5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="172dp"
-        android:text="@string/history"
+        android:layout_marginEnd="116dp"
+        android:text="@string/weekly_history"
         android:textColor="@color/orange"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/circle10"
-        android:layout_width="235dp"
-        android:layout_height="235dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginBottom="564dp"
-        android:background="@drawable/circle2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/btnNext3"
+        android:layout_width="73dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        android:text="@string/new_config"
+        android:textColor="@color/orange"
+        android:textSize="0sp"
+        android:textStyle="bold"
+        app:icon="@drawable/arrow"
+        app:iconGravity="textEnd"
+        app:iconSize="100dp"
+        app:iconTint="@color/orange"
+        app:iconTintMode="src_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/circle9"
@@ -38,35 +112,159 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <Button
+        android:id="@+id/btnNext5"
+        android:layout_width="73dp"
+        android:layout_height="50dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="216dp"
+        android:background="#00FFFFFF"
+        android:text="@string/new_config"
+        android:textColor="@color/orange"
+        android:textSize="0sp"
+        android:textStyle="bold"
+        app:icon="@drawable/arrow"
+        app:iconGravity="textEnd"
+        app:iconSize="100dp"
+        app:iconTint="@color/orange"
+        app:iconTintMode="src_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="127dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="124dp"
+        android:text="@string/week1"
+        android:textColor="@color/orange"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="254dp" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="268dp"
+        android:text="@string/week2"
+        android:textColor="@color/orange"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="380dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="412dp"
+        android:text="@string/week3"
+        android:textColor="@color/orange"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="535dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="132dp"
+        android:text="@string/week4"
+        android:textColor="@color/orange"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="419dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="164dp"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:text="@string/usage_history1"
+        android:textColor="@color/black"
+        android:textColorHighlight="#3C3B3B"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="404dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="312dp"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:text="@string/usage_history2"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="406dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="176dp"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:text="@string/usage_history3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="420dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:text="@string/usage_history4"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext4"
+        android:layout_width="73dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00FFFFFF"
+        android:text="@string/new_config"
+        android:textColor="@color/orange"
+        android:textSize="0sp"
+        android:textStyle="bold"
+        app:icon="@drawable/arrow"
+        app:iconGravity="textEnd"
+        app:iconSize="100dp"
+        app:iconTint="@color/orange"
+        app:iconTintMode="src_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="92dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
