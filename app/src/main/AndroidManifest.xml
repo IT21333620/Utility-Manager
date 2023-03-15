@@ -12,6 +12,9 @@
         android:theme="@style/Theme.UtilityManager"
         tools:targetApi="31">
         <activity
+            android:name=".details_electricity"
+            android:exported="false" />
+        <activity
             android:name=".monthly_water_bill"
             android:exported="false" />
         <activity
