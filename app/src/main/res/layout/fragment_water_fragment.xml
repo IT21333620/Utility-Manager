@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Water_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/orange"
+        android:backgroundTint="@color/white"
+        tools:context=".models.water_management">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton8"
+            android:layout_width="56dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="104dp"
+            android:clickable="true"
+            android:contentDescription="@string/water_manager"
+            app:backgroundTint="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/front_arrow" />
+
+        <TextView
+            android:id="@+id/circle3"
+            android:layout_width="235dp"
+            android:layout_height="235dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginBottom="564dp"
+            android:background="@drawable/circle2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/circle"
+            android:layout_width="212dp"
+            android:layout_height="212dp"
+            android:layout_marginEnd="284dp"
+            android:layout_marginBottom="604dp"
+            android:background="@drawable/circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="163dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="224dp"
+            android:layout_marginBottom="104dp"
+
+            android:backgroundTint="@color/orange"
+            android:text="@string/view_history"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="366dp"
+            android:layout_height="372dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginBottom="188dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.549"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/hasini" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/elec_manager11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="55dp"
+        android:text="@string/water_manager"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</FrameLayout>

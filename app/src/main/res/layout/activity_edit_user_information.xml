@@ -8,10 +8,10 @@
 
     <Button
         android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginBottom="48dp"
+        android:layout_width="143dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginBottom="44dp"
         android:text="@string/update"
         app:backgroundTint="@color/orange"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -115,7 +115,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginBottom="332dp"
         android:text="@string/drinking"
-        android:textSize="14sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -126,7 +126,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginBottom="284dp"
         android:text="@string/showering"
-        android:textSize="16sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -137,7 +137,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginBottom="236dp"
         android:text="@string/washing"
-        android:textSize="16sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -148,7 +148,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginBottom="188dp"
         android:text="@string/gardening"
-        android:textSize="16sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -159,6 +159,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginBottom="140dp"
         android:text="@string/other"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -247,8 +248,8 @@
         android:id="@+id/elec_manager7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="92dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="72dp"
         android:text="@string/edit_user_information"
         android:textColor="@color/orange"
         android:textSize="30sp"
