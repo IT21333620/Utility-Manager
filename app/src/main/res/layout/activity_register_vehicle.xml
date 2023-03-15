@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contentDescription="@string/select1"
     tools:context=".models.register_vehicle">
 
     <TextView
@@ -81,6 +82,7 @@
         android:layout_height="50dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="16dp"
+        android:contentDescription="@string/select2"
         android:entries="@array/brands"
         app:layout_constraintBottom_toTopOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -127,6 +129,7 @@
         android:layout_height="50dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="36dp"
+        android:contentDescription="@string/select1"
         android:entries="@array/years"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent" />
