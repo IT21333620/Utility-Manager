@@ -95,6 +95,10 @@
     <string name="week_cost">Weekly cost (LKR)</string>
     <string name="cost">6000</string>
     <string name="fuel_history">Fuel Usage History</string>
+    <string name="fuel_history1">Total Distance (km) : 30\n Fuel Usage (liters) : 15\n Total cost: 6000</string>
+    <string name="fuel_history2">Total Distance (km) : 54\n Fuel Usage (liters) : 12\n Total cost: 7000</string>
+    <string name="fuel_history3">Total Distance (km) : 79\n Fuel Usage (liters) : 27\n Total cost: 8350</string>
+    <string name="fuel_history4">Total Distance (km) : 224\n Fuel Usage (liters) : 52\n Total cost: 11000</string>
     <string name="usage_update">Weekly Fuel Usage Update</string>
     <string-array name="weeks">
         <item>1</item>
