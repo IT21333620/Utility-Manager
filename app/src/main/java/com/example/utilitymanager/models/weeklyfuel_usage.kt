@@ -10,7 +10,7 @@ import android.widget.Spinner
 import com.example.utilitymanager.R
 
 class weeklyfuel_usage : AppCompatActivity() {
-    private val users = arrayOf("User", "Company", "Advertiser")
+    private val weeks = arrayOf("1", "2", "3", "4")
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +18,7 @@ class weeklyfuel_usage : AppCompatActivity() {
         setContentView(R.layout.activity_weeklyfuel_usage)
 
         val spinner2 = findViewById<Spinner>(R.id.spinner2)
-        val arrayAdapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, users)
+        val arrayAdapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, weeks)
         spinner2.adapter = arrayAdapter
         spinner2.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(

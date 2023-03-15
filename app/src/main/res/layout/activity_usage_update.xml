@@ -10,31 +10,37 @@
         android:id="@+id/textView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="208dp"
         android:text="@string/usage"
         android:textColor="@color/black"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="201dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="372dp"
         android:text="@string/distance"
         android:textColor="@color/black"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="320dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="256dp"
         android:text="@string/filled"
         android:textColor="@color/black"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/circle14"
@@ -60,65 +66,81 @@
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="52dp"
         android:text="@string/usage_update"
         android:textColor="@color/orange"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="42dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView28"
         android:layout_width="85dp"
         android:layout_height="53dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="128dp"
         android:text="@string/week"
         android:textColor="@color/black"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="124dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="164dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/kmltr"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="239dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="304dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/km"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="363dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="184dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/liters"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="478dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="207dp"
         android:layout_height="66dp"
+        android:layout_marginBottom="72dp"
         android:backgroundTint="@color/orange"
         android:text="@string/calnup"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="560dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="174dp"
         android:layout_height="56dp"
-        tools:layout_editor_absoluteX="178dp"
-        tools:layout_editor_absoluteY="117dp" />
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="64dp"
+        android:contentDescription="@string/select2"
+        android:entries="@array/weeks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
