@@ -10,8 +10,8 @@
         android:id="@+id/floatingActionButton2"
         android:layout_width="56dp"
         android:layout_height="57dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
         android:clickable="true"
         android:contentDescription="@string/water_manager"
         app:backgroundTint="@color/orange"
@@ -130,7 +130,7 @@
         android:hint="    Enter"
         android:inputType="textPersonName"
         android:textColor="@color/black"
-        android:textColorHint="@color/material_dynamic_neutral60"
+        android:textColorHint="@color/gray"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -156,7 +156,9 @@
         android:ems="10"
         android:hint="    Enter"
         android:inputType="textPersonName"
-        android:textColor="@color/material_dynamic_neutral_variant90"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -179,7 +181,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginBottom="332dp"
         android:text="@string/drinking"
-        android:textSize="14sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -190,7 +192,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginBottom="284dp"
         android:text="@string/showering"
-        android:textSize="16sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -201,7 +203,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginBottom="236dp"
         android:text="@string/washing"
-        android:textSize="16sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -212,7 +214,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginBottom="188dp"
         android:text="@string/gardening"
-        android:textSize="16sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -223,6 +225,7 @@
         android:layout_marginStart="44dp"
         android:layout_marginBottom="140dp"
         android:text="@string/other"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -236,6 +239,7 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="@color/gray"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.86"
@@ -252,6 +256,7 @@
         android:minHeight="48dp"
         android:textColor="@color/gray"
         android:textColorHint="@color/gray"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.86"

@@ -48,7 +48,7 @@
         android:layout_width="163dp"
         android:layout_height="56dp"
         android:layout_marginEnd="224dp"
-        android:layout_marginBottom="128dp"
+        android:layout_marginBottom="104dp"
 
         android:backgroundTint="@color/orange"
         android:text="@string/view_history"
@@ -61,10 +61,10 @@
         android:layout_height="372dp"
         android:layout_marginStart="88dp"
         android:layout_marginEnd="88dp"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="188dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/hasini" />
 
@@ -72,8 +72,8 @@
         android:id="@+id/floatingActionButton"
         android:layout_width="56dp"
         android:layout_height="57dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="104dp"
         android:clickable="true"
         android:contentDescription="@string/water_manager"
         app:backgroundTint="@color/orange"
