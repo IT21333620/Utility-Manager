@@ -113,4 +113,24 @@
     <string name="home">Home</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="select_com">Select Components</string>
+    <string name="light">Light bulb</string>
+    <string name="fan">Fan</string>
+    <string name="fridge">Fridge</string>
+    <string name="tv">TV</string>
+    <string name="ac">AC</string>
+    <string name="washing_machine">Washing Machine</string>
+    <string name="rice_cooker">Rice Cooker</string>
+    <string name="kettel">Kettel</string>
+    <string name="iron">Iron</string>
+    <string name="hot_plate">Hot Plate</string>
+    <string name="watt">Watt</string>
+    <string name="enter_watt">Enter Watts</string>
+    <string name="how_many">How Many</string>
+    <string name="num_items">Number of owned</string>
+    <string name="hours">Hours</string>
+    <string name="no_for">Turn on for</string>
+    <string name="avg_time">**Add hours or leave empty for \nadd average time automatically</string>
+    <string name="add_btn">Add</string>
+    <string name="back_btn">Back</string>
+    <string name="you_usage">Your Usage</string>
 </resources>

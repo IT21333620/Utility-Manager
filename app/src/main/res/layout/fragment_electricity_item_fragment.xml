@@ -3,10 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:fillViewport="true"
 
-    android:layout_width="409dp"
-    android:layout_height="729dp">
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -35,11 +37,13 @@
             android:id="@+id/textView18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="56dp"
             android:text="@string/select_com"
             android:textColor="@color/orange"
             android:textSize="34sp"
-            tools:layout_editor_absoluteX="65dp"
-            tools:layout_editor_absoluteY="71dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView19"
@@ -48,9 +52,151 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
             android:background="@drawable/squre1"
-            android:text="TextView"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:text="@string/light"
+            android:textAlignment="inherit"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/squre1"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:text="@string/fridge"
+            android:textAlignment="inherit"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/squre1"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:text="@string/washing_machine"
+            android:textAlignment="inherit"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/squre1"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:text="@string/ac"
+            android:textAlignment="inherit"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/squre1"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:text="@string/rice_cooker"
+            android:textAlignment="inherit"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/squre1"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:text="@string/kettel"
+            android:textAlignment="inherit"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="224dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/squre1"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:text="@string/iron"
+            android:textAlignment="inherit"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="224dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/squre1"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:text="@string/hot_plate"
+            android:textAlignment="inherit"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/squre1"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:text="@string/tv"
+            android:textAlignment="inherit"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
         <TextView
             android:id="@+id/textView20"
@@ -59,17 +205,143 @@
             android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/squre1"
-            android:text="TextView"
+            android:paddingLeft="15dp"
+            android:paddingTop="4dp"
+            android:text="@string/fan"
+            android:textColor="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView16" />
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="136dp"
-            android:layout_height="130dp"
-            android:src="@drawable/light_bulb_png_bulb_png1247_12"
-            tools:layout_editor_absoluteX="57dp"
-            tools:layout_editor_absoluteY="388dp" />
+            android:layout_width="129dp"
+            android:layout_height="135dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/Transparent"
+            android:contentDescription="@string/light"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_light"
+            app:layout_constraintBottom_toBottomOf="@+id/textView19"
+            app:layout_constraintEnd_toEndOf="@+id/textView19" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="168dp"
+            android:layout_height="143dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/Transparent"
+            android:contentDescription="@string/fan"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_fan"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="149dp"
+            android:layout_height="143dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="27dp"
+            android:backgroundTint="@color/Transparent"
+            android:contentDescription="@string/fridge"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_fridge"
+            app:layout_constraintStart_toStartOf="@+id/textView34"
+            app:layout_constraintTop_toTopOf="@+id/textView34" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="162dp"
+            android:layout_height="129dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/Transparent"
+            android:contentDescription="@string/tv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_tv"
+            app:layout_constraintStart_toStartOf="@+id/textView33"
+            app:layout_constraintTop_toTopOf="@+id/textView33" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="158dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/Transparent"
+            android:contentDescription="@string/ac"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_ac"
+            app:layout_constraintStart_toStartOf="@+id/textView32"
+            app:layout_constraintTop_toTopOf="@+id/textView32" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="97dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="56dp"
+            android:backgroundTint="@color/Transparent"
+            android:contentDescription="@string/washing_machine"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_washing_machine"
+            app:layout_constraintStart_toStartOf="@+id/textView35"
+            app:layout_constraintTop_toTopOf="@+id/textView35" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="143dp"
+            android:layout_height="149dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/Transparent"
+            android:contentDescription="@string/rice_cooker"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_rice_cooker"
+            app:layout_constraintStart_toStartOf="@+id/textView36"
+            app:layout_constraintTop_toTopOf="@+id/textView36" />
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="158dp"
+            android:layout_height="146dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/Transparent"
+            android:contentDescription="@string/iron"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_iron"
+            app:layout_constraintStart_toStartOf="@+id/textView37"
+            app:layout_constraintTop_toTopOf="@+id/textView37" />
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="138dp"
+            android:layout_height="134dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/Transparent"
+            android:contentDescription="@string/kettel"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_kettle"
+            app:layout_constraintStart_toStartOf="@+id/textView38"
+            app:layout_constraintTop_toTopOf="@+id/textView38" />
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="164dp"
+            android:layout_height="127dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/Transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_hot_plate"
+            app:layout_constraintStart_toStartOf="@+id/textView39"
+            app:layout_constraintTop_toTopOf="@+id/textView39" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
