@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+
+    android:layout_width="409dp"
+    android:layout_height="729dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".electricity_item_fragment">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="406dp"
+            android:layout_height="189dp"
+            android:background="@drawable/navbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="409dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="144dp"
+            android:background="@drawable/white_sqr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_com"
+            android:textColor="@color/orange"
+            android:textSize="34sp"
+            tools:layout_editor_absoluteX="65dp"
+            tools:layout_editor_absoluteY="71dp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/squre1"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/squre1"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="136dp"
+            android:layout_height="130dp"
+            android:src="@drawable/light_bulb_png_bulb_png1247_12"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="388dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
