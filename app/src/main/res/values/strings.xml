@@ -132,4 +132,55 @@
     <string name="add_btn">Add</string>
     <string name="back_btn">Back</string>
     <string name="you_usage">Your Usage</string>
+
+    <string name="availabldataamount" translatable="false">Available data amount</string>
+    <string name="weeklyusage" translatable="false">Weekly Usage</string>
+    <string name="monthlyusge" translatable="false">Monthly Usage</string>
+    <string name="addtodayscreentime" translatable="false">Add Today's Screen Time</string>
+    <string name="totaldatausage" translatable="false">Total Weekly Data Usage</string>
+    <string name="totalweekdataamount" translatable="false">0.00 MB</string>
+    <string name="dataallusage" translatable="false">All Usage</string>
+    <string name="whatsapp" translatable="false">Whatsapp</string>
+    <string name="otherinternet" translatable="false">Other Internet</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="tiktok">Tik Tok</string>
+    <string name="youtube">You Tube</string>
+    <string name="whatsappdata" translatable="false">0.00 MB</string>
+    <string name="instagramdata" translatable="false">0.00 MB</string>
+    <string name="otherdatausage" translatable="false">0.00 MB</string>
+    <string name="facebookdata" translatable="false">0.00 MB</string>
+    <string name="youtubedata" translatable="false">0.00 MB</string>
+    <string name="tiktokdata" translatable="false">0.00 MB</string>
+    <string name="editdatausage">Edit Usage</string>
+    <string name="totalmonthlydatausage">Total Monthly Data Usage</string>
+    <string name="totalmonthlydataamount" translatable="false">0.00 MB</string>
+    <string name="whatsappmonthlydata" translatable="false">0.00 MB</string>
+    <string name="instagrammonthlydata" translatable="false">0.00 MB</string>
+    <string name="othermonthlydatausage" translatable="false">0.00 MB</string>
+    <string name="facebookmonthlydata" translatable="false">0.00 MB</string>
+    <string name="youtubemonthlydata" translatable="false">0.00 MB</string>
+    <string name="tiktokmonthlydata" translatable="false">0.00 MB</string>
+    <string name="select_application">Select Application</string>
+    <string name="addscreentime">Add Your screen time</string>
+    <string name="howmanydevices">How many Devices</string>
+    <string name="screentime">00.00</string>
+    <string name="devices">00</string>
+    <string name="save">Save</string>
+    <string name="deletemonthlyusage">Delete Usage</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </resources>

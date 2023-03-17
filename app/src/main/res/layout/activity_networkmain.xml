@@ -6,6 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".models.Networkmain">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="81dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:backgroundTint="@color/orange"
+        app:fabCustomSize="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="50dp"
+        app:srcCompat="@drawable/baseline_home_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="412dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/navbar" />
+
     <TextView
         android:id="@+id/sqr"
         android:layout_width="292dp"
@@ -82,6 +106,7 @@
         android:layout_marginEnd="40dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:text="@string/dataamount"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/sqr"
@@ -95,6 +120,7 @@
         android:text="@string/Submit"
         app:cornerRadius="10dp"
         tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="506dp" />
+        tools:layout_editor_absoluteY="506dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
