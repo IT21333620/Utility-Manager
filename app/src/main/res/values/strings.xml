@@ -194,4 +194,12 @@
     <string name="water_home">See how you \nspend the water \nweekly</string>
     <string name="fuel_home">Go and check \nYour Fuel usage \nand cost</string>
     <string name="other_home">Limit user Internet \nusage by tracking \nnow!!</string>
+    <string name="login">LOGIN</string>
+    <string name="no_account">Don't have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="Username">Username</string>
+    <string name="password">Password</string>
+    <string name="or">Or</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_in_with_google">Sign in with google</string>
 </resources>
