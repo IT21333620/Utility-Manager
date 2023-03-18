@@ -11,8 +11,8 @@
         android:id="@+id/circle1"
         android:layout_width="113dp"
         android:layout_height="111dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="320dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="480dp"
         android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -21,8 +21,8 @@
         android:id="@+id/circle6"
         android:layout_width="113dp"
         android:layout_height="111dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="232dp"
         android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -31,8 +31,8 @@
         android:id="@+id/circle5"
         android:layout_width="212dp"
         android:layout_height="212dp"
-        android:layout_marginEnd="284dp"
-        android:layout_marginBottom="608dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="784dp"
         android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -41,8 +41,8 @@
         android:id="@+id/circle2"
         android:layout_width="235dp"
         android:layout_height="235dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginBottom="564dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginBottom="728dp"
         android:background="@drawable/circle2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -224,9 +224,9 @@
         android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="12dp"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:srcCompat="@drawable/unselected"
-        tools:layout_editor_absoluteY="682dp" />
+        tools:layout_editor_absoluteY="843dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

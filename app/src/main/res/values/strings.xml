@@ -54,11 +54,11 @@
     <string name="total_water_units">Total Water Units (liters/1000)</string>
     <string name="weekly_cost">Weekly Cost = (1 unit*24)+(300)LKR</string>
     <string name="gas">Gas</string>
-    <string name="Network">Network</string>
-    <string name="OtherUtilities">Other Utilities</string>
-    <string name="EntermonthlyData">Enter your monthly Data amount</string>
+    <string name="network">Network</string>
+    <string name="otherUtilities">Other Utilities</string>
+    <string name="entermonthlyData">Enter your monthly Data amount</string>
     <string name="dataamount">0.00 MB</string>
-    <string name="Submit">SUBMIT</string>
+    <string name="submit">SUBMIT</string>
     <string name="view_config">View \nConfiguration</string>
     <string name="view_monthly_bill">VIEW MONTHLY BILL</string>
     <string name="history">Weekly History</string>
@@ -132,55 +132,66 @@
     <string name="add_btn">Add</string>
     <string name="back_btn">Back</string>
     <string name="you_usage">Your Usage</string>
-
-    <string name="availabldataamount" translatable="false">Available data amount</string>
-    <string name="weeklyusage" translatable="false">Weekly Usage</string>
-    <string name="monthlyusge" translatable="false">Monthly Usage</string>
-    <string name="addtodayscreentime" translatable="false">Add Today's Screen Time</string>
-    <string name="totaldatausage" translatable="false">Total Weekly Data Usage</string>
-    <string name="totalweekdataamount" translatable="false">0.00 MB</string>
-    <string name="dataallusage" translatable="false">All Usage</string>
-    <string name="whatsapp" translatable="false">Whatsapp</string>
-    <string name="otherinternet" translatable="false">Other Internet</string>
+    <string name="availabldataamount">Available data amount</string>
+    <string name="weeklyusage">Weekly Usage</string>
+    <string name="monthlyusge">Monthly Usage</string>
+    <string name="addtodayscreentime">Add Today's Screen Time</string>
+    <string name="totaldatausage">Total Weekly Data Usage</string>
+    <string name="totalweekdataamount">0.00 MB</string>
+    <string name="dataallusage">All Usage</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="otherinternet">Other Internet</string>
     <string name="instagram">Instagram</string>
     <string name="facebook">Facebook</string>
     <string name="tiktok">Tik Tok</string>
     <string name="youtube">You Tube</string>
-    <string name="whatsappdata" translatable="false">0.00 MB</string>
-    <string name="instagramdata" translatable="false">0.00 MB</string>
-    <string name="otherdatausage" translatable="false">0.00 MB</string>
-    <string name="facebookdata" translatable="false">0.00 MB</string>
-    <string name="youtubedata" translatable="false">0.00 MB</string>
-    <string name="tiktokdata" translatable="false">0.00 MB</string>
+    <string name="whatsappdata">0.00 MB</string>
+    <string name="instagramdata">0.00 MB</string>
+    <string name="otherdatausage">0.00 MB</string>
+    <string name="facebookdata">0.00 MB</string>
+    <string name="youtubedata">0.00 MB</string>
+    <string name="tiktokdata">0.00 MB</string>
     <string name="editdatausage">Edit Usage</string>
     <string name="totalmonthlydatausage">Total Monthly Data Usage</string>
-    <string name="totalmonthlydataamount" translatable="false">0.00 MB</string>
-    <string name="whatsappmonthlydata" translatable="false">0.00 MB</string>
-    <string name="instagrammonthlydata" translatable="false">0.00 MB</string>
-    <string name="othermonthlydatausage" translatable="false">0.00 MB</string>
-    <string name="facebookmonthlydata" translatable="false">0.00 MB</string>
-    <string name="youtubemonthlydata" translatable="false">0.00 MB</string>
-    <string name="tiktokmonthlydata" translatable="false">0.00 MB</string>
+    <string name="totalmonthlydataamount">0.00 MB</string>
+    <string name="whatsappmonthlydata">0.00 MB</string>
+    <string name="instagrammonthlydata">0.00 MB</string>
+    <string name="othermonthlydatausage">0.00 MB</string>
+    <string name="facebookmonthlydata">0.00 MB</string>
+    <string name="youtubemonthlydata">0.00 MB</string>
+    <string name="tiktokmonthlydata">0.00 MB</string>
     <string name="select_application">Select Application</string>
     <string name="addscreentime">Add Your screen time</string>
     <string name="howmanydevices">How many Devices</string>
-    <string name="screentime">00.00</string>
+    <string name="scntime">00.00</string>
     <string name="devices">00</string>
-    <string name="save">Save</string>
     <string name="deletemonthlyusage">Delete Usage</string>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <string name="current_usage">Current Usage</string>
+    <string name="estimated_usage">Estimated Usage</string>
+    <string name="curr_usage">113</string>
+    <string name="est_usage">160</string>
+    <string name="No_items">No of Items</string>
+    <string name="add_weekly_usage">Add weekly usage</string>
+    <string name="next">Next Page</string>
+    <string name="num_units">Number of units</string>
+    <string name="one">1</string>
+    <string name="three">3</string>
+    <string name="five">5</string>
+    <string name="sixhours">6 Hours</string>
+    <string name="ten">10</string>
+    <string name="twenty">20</string>
+    <string name="twenty_five">25</string>
+    <string name="fifty_six">56</string>
+    <string name="handred">100W</string>
+    <string name="globel_avg">Average global Usage</string>
+    <string name="history">History</string>
+    <string name="total_elec_usage">Total Usage</string>
+    <string name="used_units">Used units for the week</string>
+    <string name="new_month">New month</string>
+    <string name="units">Units</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="electro">Go on check why \nyour electric bill \ncost you high</string>
+    <string name="water_home">See how you \nspend the water \nweekly</string>
+    <string name="fuel_home">Go and check \nYour Fuel usage \nand cost</string>
+    <string name="other_home">Limit user Internet \nusage by tracking \nnow!!</string>
 </resources>

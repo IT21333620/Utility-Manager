@@ -12,6 +12,12 @@
         android:theme="@style/Theme.UtilityManager"
         tools:targetApi="31">
         <activity
+            android:name=".electricity_history"
+            android:exported="false" />
+        <activity
+            android:name=".update_electricity_config"
+            android:exported="false" />
+        <activity
             android:name=".Add_gas_details"
             android:exported="false" />
         <activity
