@@ -21,6 +21,9 @@
             android:name=".update_electricity_config"
             android:exported="false" />
         <activity
+            android:name=".login_page"
+            android:exported="false" />
+        <activity
             android:name=".Add_gas_details"
             android:exported="false" />
         <activity

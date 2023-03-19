@@ -6,30 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".models.Networkmain">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton3"
-        android:layout_width="81dp"
-        android:layout_height="78dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        app:backgroundTint="@color/orange"
-        app:fabCustomSize="78dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:maxImageSize="50dp"
-        app:srcCompat="@drawable/baseline_home_24"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="412dp"
-        android:layout_height="53dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/navbar" />
-
     <TextView
         android:id="@+id/sqr"
         android:layout_width="292dp"
@@ -70,7 +46,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/unnamed_removebg_preview" />
+        app:srcCompat="@drawable/img_logo" />
 
     <TextView
         android:id="@+id/textView4"
@@ -78,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="172dp"
         android:layout_marginEnd="140dp"
-        android:text="@string/Network"
+        android:text="@string/network"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,7 +66,7 @@
         android:layout_height="75dp"
         android:layout_marginTop="280dp"
         android:layout_marginEnd="108dp"
-        android:text="@string/EntermonthlyData"
+        android:text="@string/entermonthlyData"
         android:textAlignment="center"
         android:textColor="#F44336"
         android:textSize="20sp"
@@ -117,10 +93,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/orange"
-        android:text="@string/Submit"
+        android:text="@string/submit"
         app:cornerRadius="10dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="506dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="506dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

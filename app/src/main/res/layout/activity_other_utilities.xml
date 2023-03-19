@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="136dp"
         android:layout_marginEnd="100dp"
-        android:text="@string/OtherUtilities"
+        android:text="@string/otherUtilities"
         android:textColor="#5E5C5C"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -84,7 +84,7 @@
         android:layout_height="82dp"
         android:layout_marginEnd="116dp"
         android:backgroundTint="@color/gray"
-        android:text="@string/Network"
+        android:text="@string/network"
         android:textAllCaps="false"
         android:textColor="@color/orange"
         android:textSize="24sp"
@@ -101,7 +101,7 @@
         android:layout_marginEnd="160dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5"
-        app:srcCompat="@drawable/unnamed_removebg_preview" />
+        app:srcCompat="@drawable/img_logo" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -111,7 +111,7 @@
         android:layout_marginEnd="152dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@drawable/gas_removebg_preview" />
+        app:srcCompat="@drawable/img_gas" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

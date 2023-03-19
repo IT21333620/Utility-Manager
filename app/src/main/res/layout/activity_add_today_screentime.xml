@@ -36,7 +36,7 @@
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/unnamed_removebg_preview" />
+            app:srcCompat="@drawable/img_logo" />
 
         <TextView
             android:id="@+id/sqr5"
@@ -82,7 +82,7 @@
             android:layout_marginEnd="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView37"
-            app:srcCompat="@drawable/png_transparent_tiktok_icon_white_hd_logo_removebg_preview" />
+            app:srcCompat="@drawable/img_tiktok" />
 
         <ImageView
             android:id="@+id/imageView16"
@@ -102,7 +102,7 @@
             android:layout_marginEnd="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView42"
-            app:srcCompat="@drawable/pngtree_whatsapp_mobile_software_icon_png_image_6315991" />
+            app:srcCompat="@drawable/img_whatsapp" />
 
         <ImageView
             android:id="@+id/imageView22"
@@ -112,7 +112,7 @@
             android:layout_marginTop="36dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView43"
-            app:srcCompat="@drawable/facebook_logo__2019__png" />
+            app:srcCompat="@drawable/img_fb_logo" />
 
         <ImageView
             android:id="@+id/imageView24"
@@ -122,7 +122,7 @@
             android:layout_marginTop="104dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/circle18"
-            app:srcCompat="@drawable/youtube_play_red_logo_png_transparent_background_6" />
+            app:srcCompat="@drawable/img_youtube_logo" />
 
         <TextView
             android:id="@+id/textView41"
@@ -191,7 +191,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="52dp"
-            android:text="@string/OtherUtilities"
+            android:text="@string/otherUtilities"
             android:textColor="#F44336"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -206,7 +206,7 @@
             android:layout_marginEnd="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView44"
-            app:srcCompat="@drawable/png_transparent_google_chrome_logo_web_browser_google_chrome_frame_google_logo_green_yellow_circle_line_removebg_preview" />
+            app:srcCompat="@drawable/img_chrome" />
 
         <TextView
             android:id="@+id/textView59"
