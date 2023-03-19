@@ -12,4 +12,5 @@
     <color name="orange2">#FB9375</color>
     <color name="red_cancel">#D11A2A</color>
     <color name="Transparent">#00FFFFFF</color>
+    <color name="warning">#eed202</color>
 </resources>
