@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".models.electricity_warning_notification">
+
+    <TextView
+        android:id="@+id/textView114"
+        android:layout_width="322dp"
+        android:layout_height="413dp"
+        android:background="@drawable/squre1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="128dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="96dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView114"
+        app:layout_constraintTop_toTopOf="@+id/textView114"
+        app:srcCompat="@drawable/icon_warning_24" />
+
+    <TextView
+        android:id="@+id/textView115"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="96dp"
+        android:text="@string/warning"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title"
+        app:layout_constraintEnd_toEndOf="@+id/textView114"
+        app:layout_constraintTop_toTopOf="@+id/textView114" />
+
+    <TextView
+        android:id="@+id/textView116"
+        android:layout_width="286dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/warning_msg"
+        android:textColor="@color/red_cancel"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView114"
+        app:layout_constraintTop_toBottomOf="@+id/imageView31" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="96dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/understand"
+        android:textColor="@color/warning"
+        app:layout_constraintEnd_toEndOf="@+id/textView114"
+        app:layout_constraintTop_toBottomOf="@+id/textView116" />
+</androidx.constraintlayout.widget.ConstraintLayout>

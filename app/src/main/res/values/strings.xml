@@ -215,4 +215,8 @@
     <string name="reg3">### ##### ###</string>
     <string name="reg4">Enter Password</string>
     <string name="reg5">Re-Enter Password</string>
+    <string name="logout">Logout</string>
+    <string name="warning">Warning</string>
+    <string name="warning_msg">Your estimated unit is going be exceed by next week \n\nLimit your electricity usage  \!\!\!</string>
+    <string name="understand">Understand</string>
 </resources>
