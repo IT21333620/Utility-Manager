@@ -219,4 +219,36 @@
     <string name="warning">Warning</string>
     <string name="warning_msg">Your estimated unit is going be exceed by next week \n\nLimit your electricity usage  \!\!\!</string>
     <string name="understand">Understand</string>
+    <string name="enter_gas_details">Enter your gas Details</string>
+    <string name="mass_of_the_cylinder">Cylinder Size (kg of lpg)</string>
+    <string name="number_of_burners">Number of Burners</string>
+    <string name="burn_rate_of_burners">Burn Rate of Burners (kg/hr)</string>
+    <string name="gas_details_save">SAVE</string>
+    <string name="awailable_hours_remaining">Awailable Hours Remaining</string>
+    <string name="awailable_hours">00</string>
+    <string name="weekgasamount">Weekly Usage</string>
+    <string name="gas_detail">Your Gas Detail</string>
+    <string name="today_gas_usage">Add Today\'s Usage (Hrs)</string>
+    <string name="today_gas_usage_hours">00 (Hrs)</string>
+    <string name="total_weekly_gas_usage">Total Weekly Gas Usage</string>
+    <string name="gasnumhours">00 Hours</string>
+    <string name="gas_day1_text">Day 01</string>
+    <string name="gas_day2_text">Day 02</string>
+    <string name="gas_day3_text">Day 03</string>
+    <string name="gas_day4_text">Day 04</string>
+    <string name="gas_day5_text">Day 05</string>
+    <string name="gas_day6_text">Day 06</string>
+    <string name="gas_day7_text">Day 07</string>
+    <string name="gas_day1">00 Hours</string>
+    <string name="gas_day2">00 Hours</string>
+    <string name="gas_day3">00 Hours</string>
+    <string name="gas_day4">00 Hours</string>
+    <string name="gas_day5">00 Hours</string>
+    <string name="gas_day6">00 Hours</string>
+    <string name="gas_day7">00 Hours</string>
+    <string name="gas_details">Gas Details</string>
+    <string name="monthly_data_amount">Monthly Data Amount</string>
+    <string name="update_gas_gas_detail">Update Your Gas Detail</string>
+
+
 </resources>
