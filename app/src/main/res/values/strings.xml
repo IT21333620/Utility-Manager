@@ -1,4 +1,5 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation" >
     <string name="app_name">Utility Manager</string>
     <string name="electricity_manager">Electricity Management</string>
     <string name="new_config">Add new \n configuration</string>
@@ -135,7 +136,7 @@
     <string name="availabldataamount">Available data amount</string>
     <string name="weeklyusage">Weekly Usage</string>
     <string name="monthlyusge">Monthly Usage</string>
-    <string name="addtodayscreentime">Add Today's Screen Time</string>
+    <string name="addtodayscreentime">Add Today\'s Screen Time</string>
     <string name="totaldatausage">Total Weekly Data Usage</string>
     <string name="totalweekdataamount">0.00 MB</string>
     <string name="dataallusage">All Usage</string>
@@ -184,7 +185,6 @@
     <string name="fifty_six">56</string>
     <string name="handred">100W</string>
     <string name="globel_avg">Average global Usage</string>
-    <string name="history">History</string>
     <string name="total_elec_usage">Total Usage</string>
     <string name="used_units">Used units for the week</string>
     <string name="new_month">New month</string>
@@ -195,7 +195,7 @@
     <string name="fuel_home">Go and check \nYour Fuel usage \nand cost</string>
     <string name="other_home">Limit user Internet \nusage by tracking \nnow!!</string>
     <string name="login">LOGIN</string>
-    <string name="no_account">Don't have an account?</string>
+    <string name="no_account">Don\'t have an account?</string>
     <string name="sign_up">Sign Up</string>
     <string name="Username">Username</string>
     <string name="password">Password</string>

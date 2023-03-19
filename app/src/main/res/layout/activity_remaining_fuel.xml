@@ -95,7 +95,7 @@
             android:layout_marginTop="136dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/fuel" />
+            app:srcCompat="@drawable/img_fuel" />
 
         <TextView
             android:id="@+id/textView19"

@@ -97,6 +97,6 @@
         android:layout_marginTop="444dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/wilbur_make_every_drop_count_modified" />
+        app:srcCompat="@drawable/img_every_drop_count" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
