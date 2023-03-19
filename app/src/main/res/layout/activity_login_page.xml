@@ -10,8 +10,8 @@
         android:id="@+id/circle26"
         android:layout_width="314dp"
         android:layout_height="293dp"
-        android:layout_marginStart="408dp"
-        android:layout_marginBottom="784dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginBottom="732dp"
         android:background="@drawable/circle2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -20,8 +20,8 @@
         android:id="@+id/circle25"
         android:layout_width="292dp"
         android:layout_height="282dp"
-        android:layout_marginEnd="448dp"
-        android:layout_marginBottom="788dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="744dp"
         android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -40,10 +40,10 @@
 
     <TextView
         android:id="@+id/sqr9"
-        android:layout_width="518dp"
-        android:layout_height="665dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginEnd="48dp"
+        android:layout_width="305dp"
+        android:layout_height="641dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="40dp"
         android:width="150dp"
         android:height="150dp"
         android:background="@drawable/squre1"
@@ -52,10 +52,10 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName27"
-        android:layout_width="346dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="416dp"
+        android:layout_width="302dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="408dp"
         android:ems="10"
         android:hint="    Enter"
         android:inputType="textPersonName"
@@ -67,10 +67,10 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName24"
-        android:layout_width="346dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="524dp"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="520dp"
         android:ems="10"
         android:hint="    Enter"
         android:inputType="textPersonName"
@@ -84,8 +84,8 @@
         android:id="@+id/button13"
         android:layout_width="163dp"
         android:layout_height="56dp"
-        android:layout_marginEnd="224dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="132dp"
 
         android:backgroundTint="@color/orange"
         android:text="@string/sign_in"
@@ -125,7 +125,7 @@
         android:id="@+id/textView64"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="144dp"
         android:layout_marginTop="364dp"
         android:text="@string/Username"
         android:textColor="@color/black"
@@ -137,8 +137,8 @@
         android:id="@+id/textView65"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="484dp"
         android:text="@string/password"
         android:textColor="@color/black"
         android:textSize="26sp"
@@ -150,7 +150,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="592dp"
-        android:layout_marginEnd="280dp"
+        android:layout_marginEnd="180dp"
         android:text="@string/or"
         android:textColor="@color/black"
         android:textSize="26sp"
@@ -162,17 +162,17 @@
         android:layout_width="133dp"
         android:layout_height="130dp"
         android:layout_marginTop="216dp"
-        android:layout_marginEnd="232dp"
+        android:layout_marginEnd="136dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/user_icon_person_icon_client_symbol_login_head_sign_icon_design_vector_removebg_preview" />
+        app:srcCompat="@drawable/img_user" />
 
     <TextView
         android:id="@+id/textView110"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="244dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="220dp"
         android:text="@string/sign_in_with_google"
         android:textColor="@color/black"
         android:textSize="22sp"
@@ -183,17 +183,17 @@
         android:id="@+id/imageView34"
         android:layout_width="39dp"
         android:layout_height="61dp"
-        android:layout_marginStart="204dp"
-        android:layout_marginBottom="228dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="212dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/google_512" />
+        app:srcCompat="@drawable/img_google" />
 
     <ImageView
         android:id="@+id/imageView35"
         android:layout_width="101dp"
         android:layout_height="49dp"
-        app:srcCompat="@drawable/_73044_200"
+        app:srcCompat="@drawable/img_hidden"
         tools:layout_editor_absoluteX="387dp"
         tools:layout_editor_absoluteY="522dp" />
 

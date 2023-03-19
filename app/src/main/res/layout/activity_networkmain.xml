@@ -70,7 +70,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/unnamed_removebg_preview" />
+        app:srcCompat="@drawable/img_logo" />
 
     <TextView
         android:id="@+id/textView4"
