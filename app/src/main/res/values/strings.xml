@@ -109,7 +109,7 @@
     <string name="kmltr">12</string>
     <string name="km">50</string>
     <string name="liters">10</string>
-    <string name="calnup">CALCULATE &amp; UPDATE</string>
+    <string name="calnup">UPDATE &amp; CALCULATE</string>
     <string name="home">Home</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="select_com">Select Components</string>
@@ -202,4 +202,18 @@
     <string name="or">Or</string>
     <string name="sign_in">SIGN IN</string>
     <string name="sign_in_with_google">Sign in with google</string>
+    <string name="reg_user">REGISTER USER</string>
+    <string name="full_name">Full Name</string>
+    <string name="contact">Contact No</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="reg">SIGN UP</string>
+    <string name="acc">Already have an account?</string>
+    <string name="signin">SIGN IN</string>
+    <string name="reg1">Enter Name</string>
+    <string name="reg2">sample@example.com</string>
+    <string name="reg3">### ##### ###</string>
+    <string name="reg4">Enter Password</string>
+    <string name="reg5">Re-Enter Password</string>
 </resources>
