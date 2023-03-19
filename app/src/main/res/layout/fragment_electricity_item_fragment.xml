@@ -41,7 +41,7 @@
             android:layout_marginEnd="56dp"
             android:text="@string/select_com"
             android:textColor="@color/orange"
-            android:textSize="34sp"
+            android:textSize="@dimen/title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

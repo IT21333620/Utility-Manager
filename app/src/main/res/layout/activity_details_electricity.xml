@@ -29,10 +29,10 @@
 
         <ImageView
             android:id="@+id/imageView14"
-            android:layout_width="216dp"
-            android:layout_height="332dp"
-            android:layout_marginStart="96dp"
-            android:layout_marginTop="44dp"
+            android:layout_width="@dimen/electro_img_width"
+            android:layout_height="@dimen/electro_img_height"
+            android:layout_marginStart="@dimen/electro_img_margin_left"
+            android:layout_marginTop="@dimen/electro_img_margin_top"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/img_light" />
@@ -45,7 +45,7 @@
             android:layout_marginTop="32dp"
             android:text="@string/light"
             android:textColor="@color/orange"
-            android:textSize="34sp"
+            android:textSize="@dimen/title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView41" />
 

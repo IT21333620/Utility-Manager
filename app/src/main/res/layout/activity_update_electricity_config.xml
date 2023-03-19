@@ -19,10 +19,10 @@
 
     <ImageView
         android:id="@+id/imageView20"
-        android:layout_width="216dp"
-        android:layout_height="332dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="@dimen/electro_img_width"
+        android:layout_height="@dimen/electro_img_height"
+        android:layout_marginStart="@dimen/electro_img_margin_left"
+        android:layout_marginTop="@dimen/electro_img_margin_top"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_light" />
@@ -36,7 +36,7 @@
         android:ems="10"
         android:hint="@string/handred"
         android:inputType="textPersonName"
-        android:textSize="20sp"
+        android:textSize="@dimen/sub_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView79" />
 
@@ -60,7 +60,7 @@
         android:layout_marginTop="32dp"
         android:text="@string/light"
         android:textColor="@color/orange"
-        android:textSize="34sp"
+        android:textSize="@dimen/title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView69" />
 
@@ -74,7 +74,7 @@
         android:hint="@string/five"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:textSize="20sp"
+        android:textSize="@dimen/sub_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName20" />
 
@@ -87,6 +87,7 @@
         android:ems="10"
         android:hint="@string/sixhours"
         android:inputType="textPersonName"
+        android:textSize="@dimen/sub_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName21" />
 
@@ -147,7 +148,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/you_usage"
         android:textColor="@color/orange"
-        android:textSize="20sp"
+        android:textSize="@dimen/sub_title"
         app:layout_constraintStart_toStartOf="@+id/textView79"
         app:layout_constraintTop_toTopOf="@+id/textView79" />
 
@@ -159,7 +160,7 @@
         android:layout_marginEnd="64dp"
         android:text="@string/ten"
         android:textColor="@color/orange"
-        android:textSize="20sp"
+        android:textSize="@dimen/sub_title"
         app:layout_constraintEnd_toEndOf="@+id/textView79"
         app:layout_constraintTop_toTopOf="@+id/textView79" />
 
@@ -171,7 +172,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/globel_avg"
         android:textColor="@color/orange"
-        android:textSize="20sp"
+        android:textSize="@dimen/sub_title"
         app:layout_constraintStart_toStartOf="@+id/textView79"
         app:layout_constraintTop_toBottomOf="@+id/textView80" />
 
@@ -183,7 +184,7 @@
         android:layout_marginEnd="64dp"
         android:text="@string/twenty_five"
         android:textColor="@color/orange"
-        android:textSize="20sp"
+        android:textSize="@dimen/sub_title"
         app:layout_constraintEnd_toEndOf="@+id/textView79"
         app:layout_constraintTop_toBottomOf="@+id/textView81" />
 
