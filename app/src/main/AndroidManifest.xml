@@ -11,6 +11,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UtilityManager"
         tools:targetApi="31">
+
+        <activity
+            android:name=".Edit_gas_detail"
+            android:exported="false" />
+        <activity
+            android:name=".add_today_gas_usage"
+            android:exported="false" />
+        <activity
+            android:name=".your_gas_detail"
+            android:exported="false" />
+        <activity
+            android:name=".your_"
+            android:exported="false" />
+        <activity
+            android:name=".Weekly_gas_usage"
+            android:exported="false" />
+        <activity
+            android:name=".available_hrs_in_gas"
+            android:exported="false" />
         <activity
             android:name=".electricity_warning_notification"
             android:exported="false" />
