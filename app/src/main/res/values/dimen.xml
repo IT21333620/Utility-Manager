@@ -20,4 +20,7 @@
     <dimen name="electro_img_margin_top">44dp</dimen>
     <dimen name="electro_img_margin_left">96dp</dimen>
     <dimen name="full_width">411dp</dimen>
+    <dimen name="next_btn">57dp</dimen>
+    <dimen name="week_subtitle">22sp</dimen>
+    <dimen name="login_subtitle">26sp</dimen>
 </resources>

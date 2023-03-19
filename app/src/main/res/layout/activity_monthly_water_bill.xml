@@ -7,15 +7,16 @@
     tools:context=".models.monthly_water_bill">
 
     <TextView
-        android:id="@+id/textView25"
-        android:layout_width="205dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="384dp"
-        android:hint="LKR"
-        android:textColorHint="@color/gray"
+        android:id="@+id/textView107"
+        android:layout_width="235dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="128dp"
+        android:background="@color/gray"
+        android:hint="  LKR (avg)"
+        android:textColorHint="@color/material_dynamic_neutral50"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -26,7 +27,7 @@
         android:layout_marginTop="332dp"
         android:text="@string/Monthly_cost"
         android:textColor="@color/black"
-        android:textSize="22sp"
+        android:textSize="@dimen/week_subtitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,6 +40,20 @@
         android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/back_btn"
+        app:backgroundTint="@color/orange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="38dp"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
 
     <TextView
         android:id="@+id/circle14"
@@ -55,13 +70,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="55dp"
         android:text="@string/monthly_water_bill"
         android:textColor="@color/orange"
-        android:textSize="30sp"
+        android:textSize="@dimen/title2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -73,28 +87,29 @@
         android:layout_marginTop="184dp"
         android:text="@string/total_water_units_for_months"
         android:textColor="@color/black"
-        android:textSize="22sp"
+        android:textSize="@dimen/week_subtitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView23"
-        android:layout_width="205dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="244dp"
-        android:hint="  Units"
-        android:textColorHint="@color/gray"
+        android:id="@+id/textView106"
+        android:layout_width="235dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="128dp"
+        android:background="@color/gray"
+        android:hint="  units"
+        android:textColorHint="@color/material_dynamic_neutral50"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="314dp"
         android:layout_height="250dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="444dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="464dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_every_drop_count" />
