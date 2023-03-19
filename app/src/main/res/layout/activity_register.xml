@@ -34,7 +34,7 @@
         android:layout_marginTop="36dp"
         android:text="@string/reg_user"
         android:textColor="@color/orange"
-        android:textSize="24sp"
+        android:textSize="@dimen/login_subtitle"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -47,7 +47,7 @@
         android:layout_marginTop="120dp"
         android:text="@string/full_name"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="@dimen/reg_sub"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -75,7 +75,7 @@
         android:layout_marginTop="216dp"
         android:text="@string/email"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="@dimen/reg_sub"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -102,7 +102,7 @@
         android:layout_marginTop="316dp"
         android:text="@string/contact"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="@dimen/reg_sub"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -129,7 +129,7 @@
         android:layout_marginTop="420dp"
         android:text="@string/password"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="@dimen/reg_sub"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -156,7 +156,7 @@
         android:layout_marginBottom="184dp"
         android:text="@string/confirm"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="@dimen/reg_sub"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

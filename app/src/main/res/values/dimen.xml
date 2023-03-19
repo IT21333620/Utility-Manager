@@ -23,4 +23,6 @@
     <dimen name="next_btn">57dp</dimen>
     <dimen name="week_subtitle">22sp</dimen>
     <dimen name="login_subtitle">26sp</dimen>
+    <dimen name="sub">24dp</dimen>
+    <dimen name="reg_sub">16dp</dimen>
 </resources>
