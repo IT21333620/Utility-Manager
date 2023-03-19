@@ -184,6 +184,7 @@
     <string name="fifty_six">56</string>
     <string name="handred">100W</string>
     <string name="globel_avg">Average global Usage</string>
+    <string name="history1">History</string>
     <string name="total_elec_usage">Total Usage</string>
     <string name="used_units">Used units for the week</string>
     <string name="new_month">New month</string>
@@ -193,4 +194,18 @@
     <string name="water_home">See how you \nspend the water \nweekly</string>
     <string name="fuel_home">Go and check \nYour Fuel usage \nand cost</string>
     <string name="other_home">Limit user Internet \nusage by tracking \nnow!!</string>
+    <string name="reg_user">REGISTER USER</string>
+    <string name="full_name">Full Name</string>
+    <string name="contact">Contact No</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="reg">SIGN UP</string>
+    <string name="acc">Already have an account?</string>
+    <string name="signin">SIGN IN</string>
+    <string name="reg1">Enter Name</string>
+    <string name="reg2">sample@example.com</string>
+    <string name="reg3">### ##### ###</string>
+    <string name="reg4">Enter Password</string>
+    <string name="reg5">Re-Enter Password</string>
 </resources>
