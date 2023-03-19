@@ -55,7 +55,7 @@
         android:layout_marginEnd="60dp"
         android:text="@string/electricity_manager"
         android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textSize="@dimen/title2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -111,7 +111,7 @@
         android:layout_marginEnd="20dp"
         android:text="@string/new_config"
         android:textColor="@color/orange"
-        android:textSize="30sp"
+        android:textSize="@dimen/title2"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/sqr1"
         app:layout_constraintTop_toTopOf="@+id/sqr1" />
@@ -164,7 +164,7 @@
         android:layout_marginEnd="23dp"
         android:text="@string/view_config"
         android:textColor="@color/orange"
-        android:textSize="30sp"
+        android:textSize="@dimen/title2"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/sqr2"
         app:layout_constraintTop_toTopOf="@+id/sqr2" />

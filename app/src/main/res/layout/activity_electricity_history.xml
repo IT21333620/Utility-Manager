@@ -47,7 +47,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/week1"
         android:textColor="@color/orange"
-        android:textSize="20sp"
+        android:textSize="@dimen/sub_title"
         app:layout_constraintStart_toStartOf="@+id/textView87"
         app:layout_constraintTop_toTopOf="@+id/textView87" />
 
@@ -76,7 +76,7 @@
     <Button
         android:id="@+id/button18"
         android:layout_width="111dp"
-        android:layout_height="48dp"
+        android:layout_height="@dimen/btn_height"
         android:layout_marginEnd="128dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/orange"
@@ -92,7 +92,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/week2"
         android:textColor="@color/orange"
-        android:textSize="20sp"
+        android:textSize="@dimen/sub_title"
         app:layout_constraintStart_toStartOf="@+id/textView88"
         app:layout_constraintTop_toTopOf="@+id/textView88" />
 
@@ -140,7 +140,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/week3"
         android:textColor="@color/orange"
-        android:textSize="20sp"
+        android:textSize="@dimen/sub_title"
         app:layout_constraintStart_toStartOf="@+id/textView89"
         app:layout_constraintTop_toTopOf="@+id/textView89" />
 
@@ -161,7 +161,7 @@
     <Button
         android:id="@+id/button19"
         android:layout_width="111dp"
-        android:layout_height="48dp"
+        android:layout_height="@dimen/btn_height"
         android:layout_marginEnd="128dp"
         android:layout_marginBottom="4dp"
         android:backgroundTint="@color/orange"
@@ -194,7 +194,7 @@
     <Button
         android:id="@+id/button20"
         android:layout_width="111dp"
-        android:layout_height="48dp"
+        android:layout_height="@dimen/btn_height"
         android:layout_marginEnd="128dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/orange"
@@ -210,7 +210,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/week4"
         android:textColor="@color/orange"
-        android:textSize="20sp"
+        android:textSize="@dimen/sub_title"
         app:layout_constraintStart_toStartOf="@+id/textView91"
         app:layout_constraintTop_toTopOf="@+id/textView91" />
 
@@ -293,7 +293,7 @@
         android:layout_marginTop="64dp"
         android:text="@string/history"
         android:textColor="@color/orange"
-        android:textSize="34sp"
+        android:textSize="@dimen/title"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/imageView25"
         app:layout_constraintHorizontal_bias="0.529"
@@ -308,9 +308,9 @@
         android:layout_marginTop="24dp"
         android:text="@string/total_elec_usage"
         android:textColor="@color/orange"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/textView84"
-        app:layout_constraintTop_toTopOf="@+id/textView84"
-        android:textSize="20sp" />
+        app:layout_constraintTop_toTopOf="@+id/textView84" />
 
     <TextView
         android:id="@+id/textView86"
@@ -329,6 +329,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:height="@dimen/btn_height"
         android:backgroundTint="@color/orange"
         android:text="@string/new_month"
         app:layout_constraintEnd_toEndOf="parent"

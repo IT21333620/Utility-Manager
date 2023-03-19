@@ -46,10 +46,10 @@
         android:id="@+id/imageView"
         android:layout_width="272dp"
         android:layout_height="255dp"
-        android:layout_marginBottom="308dp"
+        android:layout_marginBottom="292dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/images" />
 

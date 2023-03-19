@@ -57,7 +57,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="408dp"
         android:ems="10"
-        android:hint="    Enter"
+        android:hint="@string/Username"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="@color/material_dynamic_neutral40"
@@ -68,17 +68,17 @@
     <EditText
         android:id="@+id/editTextTextPersonName24"
         android:layout_width="300dp"
-        android:layout_height="44dp"
+        android:layout_height="48dp"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="520dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="    Enter"
+        android:hint="@string/password"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="@color/material_dynamic_neutral40"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView65" />
 
     <Button
         android:id="@+id/button13"
