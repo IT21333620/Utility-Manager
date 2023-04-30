@@ -34,10 +34,11 @@
     <Spinner
         android:id="@+id/spinner7"
         android:layout_width="239dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="96dp"
         android:backgroundTint="#F44336"
+        android:contentDescription="@string/cylinder_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView86" />
 
@@ -56,10 +57,11 @@
     <Spinner
         android:id="@+id/spinner8"
         android:layout_width="239dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="92dp"
         android:backgroundTint="#F44336"
+        android:contentDescription="@string/no_of_bunners"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView87" />
 
@@ -78,10 +80,11 @@
     <Spinner
         android:id="@+id/spinner9"
         android:layout_width="239dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="92dp"
         android:backgroundTint="#F44336"
+        android:contentDescription="@string/cylinder_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView88" />
 
@@ -113,7 +116,7 @@
         android:layout_marginEnd="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gas_removebg_preview" />
+        app:srcCompat="@drawable/img_gas" />
 
     <TextView
         android:id="@+id/textView85"

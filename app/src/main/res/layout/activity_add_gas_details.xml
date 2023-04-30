@@ -67,7 +67,7 @@
         android:layout_marginEnd="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gas_removebg_preview" />
+        app:srcCompat="@drawable/img_gas" />
 
     <TextView
         android:id="@+id/textView61"
