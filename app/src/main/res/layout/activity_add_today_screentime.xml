@@ -29,7 +29,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView10"
+            android:id="@+id/imgWater"
             android:layout_width="86dp"
             android:layout_height="80dp"
             android:layout_marginTop="28dp"
@@ -58,7 +58,7 @@
             android:layout_height="212dp"
             android:layout_marginEnd="300dp"
             android:background="@drawable/circle"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+            app:layout_constraintBottom_toBottomOf="@+id/imgWater"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
@@ -75,7 +75,7 @@
             app:layout_constraintTop_toBottomOf="@+id/sqr4" />
 
         <ImageView
-            android:id="@+id/imageView12"
+            android:id="@+id/imgGas"
             android:layout_width="161dp"
             android:layout_height="151dp"
             android:layout_marginTop="28dp"
@@ -146,7 +146,7 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+            app:layout_constraintTop_toBottomOf="@+id/imgGas" />
 
         <TextView
             android:id="@+id/textView43"

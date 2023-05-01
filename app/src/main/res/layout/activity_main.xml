@@ -26,7 +26,7 @@
         app:srcCompat="@drawable/navbar" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/imgOther"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -35,7 +35,7 @@
         app:srcCompat="@drawable/unselected" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/imgGas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="92dp"
@@ -45,7 +45,7 @@
         app:srcCompat="@drawable/unselected_fuel" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imgElec"
         android:layout_width="48dp"
         android:layout_height="53dp"
         android:layout_marginStart="8dp"
@@ -54,7 +54,7 @@
         app:srcCompat="@drawable/unselected_electro" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imgWater"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
@@ -64,7 +64,7 @@
         app:srcCompat="@drawable/unselecteed_water" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton3"
+        android:id="@+id/btnHome"
         android:layout_width="81dp"
         android:layout_height="78dp"
         android:layout_marginEnd="164dp"

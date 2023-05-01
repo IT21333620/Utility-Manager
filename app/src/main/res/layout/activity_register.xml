@@ -40,39 +40,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView107"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="120dp"
-        android:text="@string/full_name"
-        android:textColor="@color/black"
-        android:textSize="@dimen/reg_sub"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName24"
-        android:layout_width="334dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="152dp"
-        android:background="@android:drawable/editbox_background_normal"
-        android:backgroundTint="@color/gray"
-        android:ems="10"
-        android:hint="@string/reg1"
-        android:inputType="textPersonName"
-        android:textAlignment="textStart"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView108"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="280dp"
         android:text="@string/email"
         android:textColor="@color/black"
         android:textSize="@dimen/reg_sub"
@@ -80,11 +52,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName27"
+        android:id="@+id/loginPassword"
         android:layout_width="331dp"
         android:layout_height="48dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="248dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
         android:background="@android:drawable/editbox_background"
         android:backgroundTint="@color/gray"
         android:ems="10"
@@ -92,123 +64,99 @@
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView109"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="316dp"
-        android:text="@string/contact"
-        android:textColor="@color/black"
-        android:textSize="@dimen/reg_sub"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName28"
-        android:layout_width="334dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="352dp"
-        android:background="@android:drawable/editbox_background_normal"
-        android:backgroundTint="@color/gray"
-        android:ems="10"
-        android:hint="@string/reg3"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView108" />
 
     <TextView
         android:id="@+id/textView110"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
         android:text="@string/password"
         android:textColor="@color/black"
         android:textSize="@dimen/reg_sub"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName29"
-        android:layout_width="334dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="236dp"
-        android:background="@android:drawable/editbox_background_normal"
-        android:backgroundTint="@color/gray"
-        android:ems="10"
-        android:hint="@string/reg4"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView111"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="184dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
         android:text="@string/confirm"
         android:textColor="@color/black"
         android:textSize="@dimen/reg_sub"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regPassword" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName30"
-        android:layout_width="334dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="136dp"
-        android:background="@android:drawable/editbox_background_normal"
-        android:backgroundTint="@color/gray"
-        android:ems="10"
-        android:hint="@string/reg5"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button22"
         android:layout_width="114dp"
         android:layout_height="54dp"
-        android:layout_marginEnd="144dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="180dp"
         android:backgroundTint="@color/orange"
         android:text="@string/reg"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView112"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="148dp"
         android:text="@string/acc"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button23"
         android:layout_width="153dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="84dp"
         android:background="@color/Transparent"
         android:backgroundTint="@color/black"
         android:text="@string/signin"
         android:textColor="@color/orange"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/regPassword"
+        android:layout_width="334dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@color/gray"
+        android:ems="10"
+        android:hint="@string/reg4"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView110" />
+
+    <EditText
+        android:id="@+id/reEnterPass"
+        android:layout_width="334dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:backgroundTint="@color/gray"
+        android:ems="10"
+        android:hint="@string/reg5"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView111" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
