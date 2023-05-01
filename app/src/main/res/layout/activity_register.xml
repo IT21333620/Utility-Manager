@@ -51,20 +51,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/loginPassword"
-        android:layout_width="331dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="24dp"
-        android:background="@android:drawable/editbox_background"
-        android:backgroundTint="@color/gray"
-        android:ems="10"
-        android:hint="@string/reg2"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView108" />
+
 
     <TextView
         android:id="@+id/textView110"
@@ -80,7 +67,7 @@
 
 
     <TextView
-        android:id="@+id/textView111"
+        android:id="@+id/loginSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
@@ -93,7 +80,7 @@
 
 
     <Button
-        android:id="@+id/button22"
+        android:id="@+id/signUp"
         android:layout_width="114dp"
         android:layout_height="54dp"
         android:layout_marginBottom="180dp"
@@ -117,7 +104,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button23"
+        android:id="@+id/regSignin"
         android:layout_width="153dp"
         android:layout_height="60dp"
         android:layout_marginBottom="84dp"
@@ -157,6 +144,21 @@
         android:inputType="textPassword"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView111" />
+        app:layout_constraintTop_toBottomOf="@+id/loginSignup" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/gray"
+        android:ems="10"
+        android:hint="@string/reg2"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView108"  />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
