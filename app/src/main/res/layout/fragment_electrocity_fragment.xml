@@ -91,7 +91,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnNext7"
+        android:id="@+id/btnViewConfig"
         android:layout_width="73dp"
         android:layout_height="50dp"
 
@@ -149,7 +149,7 @@
         app:layout_constraintTop_toTopOf="@+id/sqr7" />
 
     <Button
-        android:id="@+id/btnNext6"
+        android:id="@+id/btnNewConfig"
         android:layout_width="73dp"
         android:layout_height="50dp"
 
