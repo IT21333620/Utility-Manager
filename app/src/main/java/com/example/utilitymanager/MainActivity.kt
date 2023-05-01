@@ -2,11 +2,16 @@ package com.example.utilitymanager
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import com.example.utilitymanager.models.other_utilities
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         val fragmentHome = Home_fragment()
         val fragmentFuel = fuel_fragment()
         val fragmentOther = other_utilities()
+
 
 
         imgElectrocity.setOnClickListener {

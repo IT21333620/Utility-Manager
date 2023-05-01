@@ -7,7 +7,7 @@
     tools:context=".models.login_page">
 
     <TextView
-        android:id="@+id/textView111"
+        android:id="@+id/loginSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="776dp"
@@ -53,7 +53,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName24"
+        android:id="@+id/loginEmail"
         android:layout_width="302dp"
         android:layout_height="53dp"
         android:layout_marginTop="32dp"
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView64" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/loginSignIn"
         android:layout_width="175dp"
         android:layout_height="@dimen/btn_height"
 
@@ -121,7 +121,7 @@
         android:textColor="@color/black"
         android:textSize="@dimen/reg_sub"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
+        app:layout_constraintTop_toBottomOf="@+id/loginEmail" />
 
     <TextView
         android:id="@+id/textView66"
@@ -134,7 +134,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button13" />
+        app:layout_constraintTop_toBottomOf="@+id/loginSignIn" />
 
     <TextView
         android:id="@+id/textView109"
