@@ -51,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/sqr6" />
 
     <TextView
-        android:id="@+id/textView40"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
@@ -96,7 +96,7 @@
         android:inputType="textPersonName"
         android:text="@string/scntime"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <Button
         android:id="@+id/button11"

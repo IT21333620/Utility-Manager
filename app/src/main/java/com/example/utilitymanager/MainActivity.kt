@@ -8,6 +8,8 @@ import com.example.utilitymanager.models.other_utilities
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
@@ -27,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         val fragmentHome = Home_fragment()
         val fragmentFuel = fuel_fragment()
         val fragmentOther = other_utilities()
+        val Firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference()
 
 
 
