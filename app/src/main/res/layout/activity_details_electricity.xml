@@ -28,7 +28,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView14"
+            android:id="@+id/cardImg"
             android:layout_width="@dimen/electro_img_width"
             android:layout_height="@dimen/electro_img_height"
             android:layout_marginStart="@dimen/electro_img_margin_left"
@@ -38,7 +38,7 @@
             app:srcCompat="@drawable/img_light" />
 
         <TextView
-            android:id="@+id/textView40"
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -59,7 +59,7 @@
             android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView40" />
+            app:layout_constraintTop_toBottomOf="@+id/title" />
 
         <EditText
             android:id="@+id/editTextTextPersonName17"
@@ -73,7 +73,7 @@
             android:inputType="textPersonName"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView40" />
+            app:layout_constraintTop_toBottomOf="@+id/title" />
 
         <TextView
             android:id="@+id/textView43"
