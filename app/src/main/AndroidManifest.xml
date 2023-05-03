@@ -69,7 +69,7 @@
             android:name=".availabledataamount"
             android:exported="false" />
         <activity
-            android:name=".details_electricity"
+            android:name=".models.details_electricity"
             android:exported="false" />
         <activity
             android:name=".monthly_water_bill"

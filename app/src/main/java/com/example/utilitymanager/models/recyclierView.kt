@@ -1,5 +1,6 @@
 package com.example.utilitymanager.models
 
+import android.content.Intent
 import android.nfc.NfcAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -38,6 +39,12 @@ class recyclierView : AppCompatActivity() {
 
         cardAdepter = CardAdepter(itemList)
         recyclerView.adapter = cardAdepter
+
+        cardAdepter.onItemClick = {
+            val intent = Intent(this,details_electricity::class.java)
+            intent.putExtra("item",it)
+            startActivity(intent)
+        }
     }
 
 }

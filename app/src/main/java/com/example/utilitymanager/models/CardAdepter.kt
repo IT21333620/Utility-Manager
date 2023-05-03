@@ -13,6 +13,7 @@ import com.example.utilitymanager.R
 class CardAdepter (private val itemList: ArrayList<Item>)
     :RecyclerView.Adapter<CardAdepter.CardViewHolder>(){
 
+    var onItemClick : ((Item) -> Unit)? = null
     class CardViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val  imageView: ImageView = itemView.findViewById(R.id.imageView)
         val textView: TextView = itemView.findViewById(R.id.title)
@@ -32,6 +33,10 @@ class CardAdepter (private val itemList: ArrayList<Item>)
         val item = itemList[position]
         holder.imageView.setImageResource(item.image)
         holder.textView.text = item.title
+
+        holder.itemView.setOnClickListener{
+            onItemClick?.invoke(item)
+        }
     }
 
 
