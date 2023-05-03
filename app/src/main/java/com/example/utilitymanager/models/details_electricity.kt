@@ -2,12 +2,24 @@ package com.example.utilitymanager.models
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import com.example.utilitymanager.R
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class details_electricity : AppCompatActivity() {
 
+    private lateinit var entWatts: EditText
+    private lateinit var entNumber: EditText
+    private lateinit var entHours: EditText
+    private lateinit var btnSubmit: FloatingActionButton
+
+    private lateinit var dbRef: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details_electricity)
@@ -20,5 +32,46 @@ class details_electricity : AppCompatActivity() {
             textView.text = item.title
             imageView.setImageResource(item.image)
         }
+
+        entWatts = findViewById(R.id.textWatt)
+        entNumber = findViewById(R.id.textNumber)
+        entHours = findViewById(R.id.TextHours)
+        btnSubmit = findViewById(R.id.btnSubmit)
+
+        dbRef = FirebaseDatabase.getInstance().getReference("electric_item")
+
+        btnSubmit.setOnClickListener {
+            saveElectriItemData()
+        }
+
+
+    }
+    private fun saveElectriItemData()
+    {
+        val watts = entWatts.text.toString()
+        val  number = entNumber.text.toString()
+        val hours = entHours.text.toString()
+
+        if(watts.isEmpty()){
+            entWatts.error = "Please enter Watts"
+        }
+        if(number.isEmpty()){
+            entNumber.error = "Please enter Number of items"
+        }
+        if(hours.isEmpty()){
+            entHours.error = "Please enter hours"
+        }
+
+        val itemId = dbRef.push().key!!
+
+        val elecItem = ElectroItemModel(itemId,watts,number,hours)
+
+        dbRef.child(itemId).setValue(elecItem)
+            .addOnCompleteListener{
+                Toast.makeText(this,"Data inserted Successfully",Toast.LENGTH_SHORT).show()
+            }.addOnFailureListener(){ err ->
+                Toast.makeText(this,"Error ${err.message}",Toast.LENGTH_SHORT).show()
+            }
+
     }
 }
