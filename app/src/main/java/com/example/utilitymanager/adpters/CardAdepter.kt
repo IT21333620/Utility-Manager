@@ -1,4 +1,4 @@
-package com.example.utilitymanager.models
+package com.example.utilitymanager.adpters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.utilitymanager.R
-
+import com.example.utilitymanager.models.Item
 
 
 class CardAdepter (private val itemList: ArrayList<Item>)
@@ -21,7 +21,7 @@ class CardAdepter (private val itemList: ArrayList<Item>)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.card_electro,parent,false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.update_item_card,parent,false)
         return CardViewHolder(view)
     }
 
