@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() {
         val fragmentWater = Water_fragment()
         val fragmentHome = Home_fragment()
         val fragmentFuel = fuel_fragment()
-        val fragmentOther = other_utilities()
         val Firebase : DatabaseReference = FirebaseDatabase.getInstance().getReference()
+        val fragmentOther = OtherUti()
 
 
 
@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
             imgOther.setImageResource(R.drawable.selected_other)
 
             supportFragmentManager.beginTransaction().apply {
-                replace(R.id.fragmentContainerView2,fragmentFuel)
+                replace(R.id.fragmentContainerView2,fragmentOther)
                 commit()
             }
         }
