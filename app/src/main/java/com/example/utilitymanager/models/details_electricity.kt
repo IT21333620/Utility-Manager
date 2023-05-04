@@ -9,6 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.example.utilitymanager.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -20,6 +21,7 @@ class details_electricity : AppCompatActivity() {
     private lateinit var btnSubmit: FloatingActionButton
 
     private lateinit var dbRef: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details_electricity)
@@ -38,6 +40,7 @@ class details_electricity : AppCompatActivity() {
         entHours = findViewById(R.id.TextHours)
         btnSubmit = findViewById(R.id.btnSubmit)
 
+
         dbRef = FirebaseDatabase.getInstance().getReference("electric_item")
 
         btnSubmit.setOnClickListener {
@@ -46,11 +49,14 @@ class details_electricity : AppCompatActivity() {
 
 
     }
+
     private fun saveElectriItemData()
     {
         val watts = entWatts.text.toString()
         val  number = entNumber.text.toString()
         val hours = entHours.text.toString()
+        val itemName = intent.getParcelableExtra<Item>("item")?.title ?: ""
+        val itemImage = intent.getParcelableExtra<Item>("item")?.image ?: 0
 
         if(watts.isEmpty()){
             entWatts.error = "Please enter Watts"
@@ -62,9 +68,18 @@ class details_electricity : AppCompatActivity() {
             entHours.error = "Please enter hours"
         }
 
+        val userId = FirebaseAuth.getInstance().currentUser?.uid ?: ""
         val itemId = dbRef.push().key!!
 
-        val elecItem = ElectroItemModel(itemId,watts,number,hours)
+        val elecItem = ElectroItemModel(
+            itemId,
+            watts,
+            number,
+            hours,
+            itemName,
+            itemImage,
+            userId
+        )
 
         dbRef.child(itemId).setValue(elecItem)
             .addOnCompleteListener{

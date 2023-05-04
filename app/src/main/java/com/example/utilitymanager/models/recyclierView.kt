@@ -1,14 +1,12 @@
 package com.example.utilitymanager.models
 
 import android.content.Intent
-import android.nfc.NfcAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.utilitymanager.R
-import com.example.utilitymanager.databinding.ActivityRecyclierViewBinding
+import com.example.utilitymanager.adpters.CardAdepter
 
 class recyclierView : AppCompatActivity() {
 
