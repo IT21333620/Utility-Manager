@@ -82,10 +82,10 @@
             android:name=".usage_update"
             android:exported="false" />
         <activity
-            android:name=".fuel_usage_history"
+            android:name=".models.fuel_usage_history"
             android:exported="false" />
         <activity
-            android:name=".remaining_fuel"
+            android:name=".models.remaining_fuel"
             android:exported="false" />
         <activity
             android:name=".models.weekly_usage"
@@ -107,6 +107,12 @@
             android:exported="false" />
         <activity
             android:name=".models.electricity_manager"
+            android:exported="false" />
+        <activity
+            android:name=".models.weeklyfuel_usage"
+            android:exported="false" />
+        <activity
+            android:name=".models.register_vehicle"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

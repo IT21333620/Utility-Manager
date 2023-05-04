@@ -250,5 +250,7 @@
     <string name="update_gas_gas_detail">Update Your Gas Detail</string>
     <string name="no_of_bunners">No of bunners</string>
     <string name="cylinder_size">Cylider Size</string>
+    <string name="field2">Enter brand</string>
+    <string name="field4">Enter year</string>
 
 </resources>

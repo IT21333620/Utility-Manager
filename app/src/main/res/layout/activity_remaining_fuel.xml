@@ -6,33 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".models.remaining_fuel">
 
-    <TextView
-        android:id="@+id/circle17"
-        android:layout_width="235dp"
-        android:layout_height="235dp"
-        android:layout_marginStart="264dp"
-        android:layout_marginBottom="568dp"
-        android:background="@drawable/circle2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/circle16"
-        android:layout_width="212dp"
-        android:layout_height="212dp"
-        android:layout_marginEnd="284dp"
-        android:layout_marginBottom="624dp"
-        android:background="@drawable/circle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="12dp"
         tools:context=".models.remaining_fuel"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-16dp">
+        tools:layout_editor_absoluteY="-92dp">
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="147dp"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginStart="236dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/view_history"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/floatingActionButton18"
@@ -48,25 +41,12 @@
             app:maxImageSize="38dp"
             app:srcCompat="@drawable/baseline_arrow_back_24" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton5"
-            android:layout_width="@dimen/next_btn"
-            android:layout_height="@dimen/next_btn"
-            android:layout_marginEnd="28dp"
-            android:layout_marginBottom="36dp"
-            android:clickable="true"
-            android:contentDescription="@string/water_manager"
-            app:backgroundTint="@color/orange"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/front_arrow" />
-
         <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="124dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="140dp"
             android:text="@string/remains"
             android:textColor="@color/orange"
             android:textSize="@dimen/title"
@@ -77,59 +57,58 @@
             android:id="@+id/textView17"
             android:layout_width="137dp"
             android:layout_height="34dp"
-            android:layout_marginTop="148dp"
-            android:layout_marginEnd="48dp"
+            android:layout_marginTop="184dp"
+            android:layout_marginEnd="36dp"
             android:text="@string/fuel_used"
             android:textColor="@color/black"
             android:textSize="@dimen/sub"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
         <TextView
             android:id="@+id/textView18"
             android:layout_width="122dp"
             android:layout_height="66dp"
-            android:layout_marginEnd="60dp"
-            android:layout_marginBottom="460dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
             android:background="@drawable/white_sqr"
             android:backgroundTint="@color/gray"
             android:paddingTop="16dp"
-            android:text="TextView"
+            android:text="@string/used_value"
             android:textAlignment="center"
             android:textSize="@dimen/sub_title"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:text="@string/used_value" />
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="195dp"
             android:layout_height="170dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="136dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="152dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16"
             app:srcCompat="@drawable/img_fuel" />
 
         <TextView
             android:id="@+id/textView19"
             android:layout_width="158dp"
             android:layout_height="50dp"
-            android:layout_marginEnd="44dp"
-            android:layout_marginBottom="316dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="40dp"
             android:text="@string/remain"
             android:textColor="@color/black"
             android:textSize="@dimen/sub"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
         <TextView
             android:id="@+id/textView20"
             android:layout_width="127dp"
             android:layout_height="67dp"
-            android:layout_marginStart="56dp"
-            android:layout_marginBottom="316dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="60dp"
             android:background="@drawable/white_sqr"
             android:backgroundTint="@color/gray"
             android:paddingTop="16dp"
@@ -137,8 +116,10 @@
             android:textAlignment="center"
             android:textSize="@dimen/sub_title"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toStartOf="@+id/textView19"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
         <TextView
             android:id="@+id/textView21"
@@ -159,15 +140,14 @@
             android:layout_marginBottom="28dp"
             android:background="@color/gray"
             android:paddingTop="12dp"
-            android:text="TextView"
+            android:text="@string/price_value"
             android:textAlignment="center"
             android:textSize="@dimen/sub_title"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/textView24"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.569"
-            app:layout_constraintStart_toEndOf="@+id/textView21"
-            tools:text="@string/price_value" />
+            app:layout_constraintStart_toEndOf="@+id/textView21" />
 
         <TextView
             android:id="@+id/textView23"
@@ -196,6 +176,25 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.629"
             app:layout_constraintStart_toEndOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/circle17"
+            android:layout_width="235dp"
+            android:layout_height="235dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/circle2"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/circle16"
+            android:layout_width="212dp"
+            android:layout_height="212dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/circle"
+            app:layout_constraintEnd_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
