@@ -55,19 +55,10 @@
             android:name=".Add_gas_details"
             android:exported="false" />
         <activity
-            android:name=".Add_screen_time"
-            android:exported="false" />
-        <activity
-            android:name=".Add_today_screentime"
-            android:exported="false" />
-        <activity
             android:name=".Monthlydatausage"
             android:exported="false" />
         <activity
             android:name=".weeklydatausage"
-            android:exported="false" />
-        <activity
-            android:name=".availabledataamount"
             android:exported="false" />
         <activity
             android:name=".models.details_electricity"
