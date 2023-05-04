@@ -10,8 +10,8 @@
         android:id="@+id/circle13"
         android:layout_width="235dp"
         android:layout_height="235dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginBottom="564dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginBottom="696dp"
         android:background="@drawable/circle2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -30,8 +30,8 @@
         android:id="@+id/circle14"
         android:layout_width="212dp"
         android:layout_height="212dp"
-        android:layout_marginEnd="284dp"
-        android:layout_marginBottom="608dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="700dp"
         android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

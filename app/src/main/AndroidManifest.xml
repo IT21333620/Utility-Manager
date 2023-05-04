@@ -109,6 +109,22 @@
             android:name=".MainActivity"
             android:exported="false">
         </activity>
+
+        <activity
+            android:name=".models.AllAppScreen"
+            android:exported="false" />
+        <activity
+            android:name=".models.Add_screen_time"
+            android:exported="false" />
+        <activity
+            android:name=".models.availabledataamount"
+            android:exported="false" />
+        <activity
+            android:name=".OtherUti"
+            android:exported="false" />
+        <activity
+            android:name=".models.Add_today_screentime"
+            android:exported="false" />
     </application>
 
 </manifest>
