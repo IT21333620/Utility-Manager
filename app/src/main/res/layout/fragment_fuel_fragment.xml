@@ -18,26 +18,26 @@
 
         <TextView
             android:id="@+id/sqr4"
-            android:layout_width="378dp"
-            android:layout_height="62dp"
-            android:layout_marginTop="460dp"
-            android:layout_marginEnd="16dp"
+            android:layout_width="360dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="24dp"
             android:width="150dp"
             android:height="150dp"
             android:background="@drawable/squre1"
             android:paddingTop="10dp"
             android:text="@string/theme"
             android:textAlignment="center"
-            android:textSize="24sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         <TextView
             android:id="@+id/circle4"
             android:layout_width="235dp"
             android:layout_height="235dp"
-            android:layout_marginStart="280dp"
-            android:layout_marginBottom="564dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginBottom="616dp"
             android:background="@drawable/circle2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -46,8 +46,8 @@
             android:id="@+id/circle"
             android:layout_width="212dp"
             android:layout_height="212dp"
-            android:layout_marginEnd="284dp"
-            android:layout_marginBottom="608dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginBottom="660dp"
             android:background="@drawable/circle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -56,10 +56,10 @@
             android:id="@+id/imageView"
             android:layout_width="272dp"
             android:layout_height="255dp"
-            android:layout_marginBottom="308dp"
+            android:layout_marginBottom="336dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.424"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/images" />
 
@@ -67,7 +67,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
+            android:layout_marginTop="104dp"
             android:layout_marginEnd="68dp"
             android:text="@string/fuel_manager"
             android:textColor="#0E0E0E"
