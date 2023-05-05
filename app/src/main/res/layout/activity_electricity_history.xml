@@ -31,13 +31,27 @@
     <TextView
         android:id="@+id/textView87"
         android:layout_width="377dp"
-        android:layout_height="99dp"
+        android:layout_height="133dp"
         android:layout_marginTop="64dp"
         android:background="@drawable/squre1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+    <EditText
+        android:id="@+id/week1Units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/units"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView87"
+        app:layout_constraintTop_toTopOf="@+id/textView87" />
 
     <TextView
         android:id="@+id/textView92"
@@ -56,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="@string/used_units"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/textView87"
@@ -74,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView87" />
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/btnWeek2"
         android:layout_width="111dp"
         android:layout_height="@dimen/btn_height"
         android:layout_marginEnd="128dp"
@@ -83,6 +97,17 @@
         android:text="@string/add_btn"
         app:layout_constraintBottom_toBottomOf="@+id/textView88"
         app:layout_constraintEnd_toEndOf="@+id/textView88" />
+
+    <Button
+        android:id="@+id/btnWeek1"
+        android:layout_width="111dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/add_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/textView87"
+        app:layout_constraintEnd_toEndOf="@+id/textView87" />
 
     <TextView
         android:id="@+id/textView93"
@@ -97,7 +122,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView88" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName23"
+        android:id="@+id/week2Units"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -145,7 +170,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView89" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName25"
+        android:id="@+id/week3Units"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -159,7 +184,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView89" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/btnWeek3"
         android:layout_width="111dp"
         android:layout_height="@dimen/btn_height"
         android:layout_marginEnd="128dp"
@@ -192,7 +217,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView89" />
 
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/btnWeek4"
         android:layout_width="111dp"
         android:layout_height="@dimen/btn_height"
         android:layout_marginEnd="128dp"
@@ -215,7 +240,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView91" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName26"
+        android:id="@+id/week4Units"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -324,7 +349,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView84" />
 
     <Button
-        android:id="@+id/button21"
+        android:id="@+id/btnNewMonth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -334,15 +359,5 @@
         android:text="@string/new_month"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView84" />
-
-    <TextView
-        android:id="@+id/textView100"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:text="@string/fifty_six"
-        android:textColor="@color/orange"
-        app:layout_constraintEnd_toEndOf="@+id/textView87"
-        app:layout_constraintTop_toTopOf="@+id/textView96" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

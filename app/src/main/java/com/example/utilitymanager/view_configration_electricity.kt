@@ -1,16 +1,19 @@
 package com.example.utilitymanager
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.utilitymanager.adpters.ItemAdepter
 import com.example.utilitymanager.models.ElectroItemModel
+import com.example.utilitymanager.models.electricity_history
 import com.example.utilitymanager.models.update_electricity_config
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
@@ -22,13 +25,21 @@ class view_configration_electricity : Fragment() {
     private lateinit var itemList: ArrayList<ElectroItemModel>
     private lateinit var dbRef: DatabaseReference
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
 
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_view_configration_electricity, container, false)
+        val view = inflater.inflate(R.layout.fragment_view_configration_electricity, container, false)
+        val btnNewConfiguration = view.findViewById<Button>(R.id.btnElecHistory)
+
+        btnNewConfiguration.setOnClickListener {
+            val intent = Intent(context, electricity_history::class.java)
+            startActivity(intent)
+        }
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -39,6 +50,7 @@ class view_configration_electricity : Fragment() {
         itemRecyclerView.setHasFixedSize(true)
 
         itemList = arrayListOf<ElectroItemModel>()
+
 
 
         getItemData()

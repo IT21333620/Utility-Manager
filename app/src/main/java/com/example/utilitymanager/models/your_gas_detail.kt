@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import androidx.fragment.app.Fragment
 import com.example.utilitymanager.OtherUti
 import com.example.utilitymanager.R
 
@@ -14,7 +13,7 @@ class your_gas_detail : AppCompatActivity() {
         setContentView(R.layout.activity_your_gas_detail)
 
         val buttonutton = findViewById<Button>(R.id.button24)
-        val buttonutton2 = findViewById<Button>(R.id.button18)
+        val buttonutton2 = findViewById<Button>(R.id.btnWeek2)
 
 
 

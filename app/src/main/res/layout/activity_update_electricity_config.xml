@@ -28,7 +28,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView20"
+            android:id="@+id/imgUpdateElec"
             android:layout_width="@dimen/electro_img_width"
             android:layout_height="@dimen/electro_img_height"
             android:layout_marginStart="@dimen/electro_img_margin_left"
