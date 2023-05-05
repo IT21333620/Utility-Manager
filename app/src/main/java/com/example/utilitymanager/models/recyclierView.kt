@@ -24,16 +24,16 @@ class recyclierView : AppCompatActivity() {
 
         itemList = ArrayList()
 
-        itemList.add(Item(R.drawable.img_light, "Light Bulb"))
-        itemList.add(Item(R.drawable.img_fan, "Fan"))
-        itemList.add(Item(R.drawable.img_fridge, "Fridge"))
-        itemList.add(Item(R.drawable.img_tv, "TV"))
-        itemList.add(Item(R.drawable.img_ac, "A/C"))
-        itemList.add(Item(R.drawable.img_washing_machine, "Washing Machine"))
-        itemList.add(Item(R.drawable.img_rice_cooker, "Rice Cooker"))
-        itemList.add(Item(R.drawable.img_iron, "Iron"))
-        itemList.add(Item(R.drawable.img_kettle, "Kettle"))
-        itemList.add(Item(R.drawable.img_hot_plate, "Hot Plate"))
+        itemList.add(Item(R.drawable.img_light,6 ,"Light Bulb","R.drawable.img_light"))
+        itemList.add(Item(R.drawable.img_fan,4, "Fan","R.drawable.img_fan"))
+        itemList.add(Item(R.drawable.img_fridge, 5,"Fridge","img_fridge"))
+        itemList.add(Item(R.drawable.img_tv, 4,"TV","img_tv"))
+        itemList.add(Item(R.drawable.img_ac, 5,"A/C","img_ac"))
+        itemList.add(Item(R.drawable.img_washing_machine, 4,"Washing Machine","img_washing_machine"))
+        itemList.add(Item(R.drawable.img_rice_cooker, 4,"Rice Cooker","img_rice_cooker"))
+        itemList.add(Item(R.drawable.img_iron, 7,"Iron","img_iron"))
+        itemList.add(Item(R.drawable.img_kettle, 6,"Kettle","img_kettle"))
+        itemList.add(Item(R.drawable.img_hot_plate, 8,"Hot Plate","img_hot_plate"))
 
         cardAdepter = CardAdepter(itemList)
         recyclerView.adapter = cardAdepter

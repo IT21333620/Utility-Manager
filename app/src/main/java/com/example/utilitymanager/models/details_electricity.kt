@@ -57,6 +57,7 @@ class details_electricity : AppCompatActivity() {
         val hours = entHours.text.toString()
         val itemName = intent.getParcelableExtra<Item>("item")?.title ?: ""
         val itemImage = intent.getParcelableExtra<Item>("item")?.image ?: 0
+        val itemUrl = "android.resource://${packageName}/${itemImage}"
 
         if(watts.isEmpty()){
             entWatts.error = "Please enter Watts"
@@ -78,6 +79,7 @@ class details_electricity : AppCompatActivity() {
             hours,
             itemName,
             itemImage,
+            itemUrl,
             userId
         )
 

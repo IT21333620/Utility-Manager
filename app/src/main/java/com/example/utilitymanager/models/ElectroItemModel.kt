@@ -7,6 +7,7 @@ data class ElectroItemModel(
     var hours: String? = null,
     var title: String? = null,
     var image: Int? = 0,
+    var itemUrl: String? = null,
     var userId: String? = null
 
 
