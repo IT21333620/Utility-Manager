@@ -14,7 +14,7 @@ import com.google.firebase.database.FirebaseDatabase
 class update_electricity_config : AppCompatActivity() {
 
     private lateinit var itemTitle: TextView
-    private lateinit var itemImage: TextView
+    private lateinit var itemImage: ImageView
     private lateinit var itemWatts: TextView
     private lateinit var itemNumber: TextView
     private lateinit var itemHours: TextView
@@ -34,6 +34,10 @@ class update_electricity_config : AppCompatActivity() {
         itemNumber = findViewById(R.id.itemNumber)
         itemHours = findViewById(R.id.itemHours)
         btnUpdate = findViewById(R.id.btnUpdate)
+        itemImage = findViewById(R.id.imgUpdateElec)
+
+        itemImage.setImageResource(intent.getIntExtra("Img", 0))
+
 
         btnUpdate.setOnClickListener {
             updateItemDetails()
@@ -46,7 +50,7 @@ class update_electricity_config : AppCompatActivity() {
         itemWatts.text = intent.getStringExtra("watts")
         itemNumber.text = intent.getStringExtra("number")
         itemHours.text = intent.getStringExtra("hours")
-       // itemImage.text = intent.getStringExtra("imageUrl")
+
     }
 
     private fun updateItemDetails() {

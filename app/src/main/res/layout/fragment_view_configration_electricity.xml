@@ -111,7 +111,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView49" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/btnElecHistory"
             android:layout_width="159dp"
             android:layout_height="@dimen/btn_height"
             android:layout_marginTop="84dp"
@@ -129,7 +129,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button14" />
+            app:layout_constraintTop_toBottomOf="@+id/btnElecHistory" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
