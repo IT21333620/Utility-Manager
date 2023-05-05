@@ -1,14 +1,17 @@
 package com.example.utilitymanager
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.utilitymanager.adpters.ItemAdepter
 import com.example.utilitymanager.models.ElectroItemModel
+import com.example.utilitymanager.models.update_electricity_config
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
@@ -37,10 +40,14 @@ class view_configration_electricity : Fragment() {
 
         itemList = arrayListOf<ElectroItemModel>()
 
+
         getItemData()
 
         // rest of your code
     }
+
+
+
     private fun getItemData(){
 
         val currentUser = FirebaseAuth.getInstance().currentUser
@@ -60,14 +67,31 @@ class view_configration_electricity : Fragment() {
                     }
                     val mAdapter = ItemAdepter(itemList)
                     itemRecyclerView.adapter = mAdapter
+
+                    mAdapter.setOnItemClickListener(object : ItemAdepter.onItemClickListener{
+                        override fun onItemClick(position: Int) {
+
+                            val intent = Intent(requireContext(), update_electricity_config::class.java)
+                            intent.putExtra("itemId",itemList[position].itemId)
+                            intent.putExtra("watts",itemList[position].watts)
+                            intent.putExtra("number",itemList[position].number)
+                            intent.putExtra("hours",itemList[position].hours)
+                            intent.putExtra("title",itemList[position].title)
+                            intent.putExtra("itemUrl",itemList[position].itemUrl)
+                            intent.putExtra("Img",itemList[position].image)
+                            startActivity(intent)
+
+                        }
+
+                    })
                 }
             }
 
             override fun onCancelled(error: DatabaseError) {
-                // Handle onCancelled event
             }
         })
     }
+
 
 
 }
