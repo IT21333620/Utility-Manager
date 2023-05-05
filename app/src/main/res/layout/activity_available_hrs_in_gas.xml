@@ -76,7 +76,7 @@
         app:layout_constraintTop_toTopOf="@+id/sqr11" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName20"
+        android:id="@+id/itemWatts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -101,7 +101,7 @@
         app:layout_constraintTop_toBottomOf="@+id/sqr11" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/btnElecDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -112,7 +112,7 @@
         app:layout_constraintTop_toBottomOf="@+id/loginSignIn" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/btnUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -120,5 +120,5 @@
         android:backgroundTint="@color/orange"
         android:text="@string/today_gas_usage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button15" />
+        app:layout_constraintTop_toBottomOf="@+id/btnElecDelete" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -98,9 +98,6 @@
             android:name=".models.water_management"
             android:exported="false" />
         <activity
-            android:name=".models.electricity_manager"
-            android:exported="false" />
-        <activity
             android:name=".models.weeklyfuel_usage"
             android:exported="false" />
         <activity
