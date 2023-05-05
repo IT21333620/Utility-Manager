@@ -60,7 +60,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView17"
+        android:id="@+id/imgItemElec"
         android:layout_width="92dp"
         android:layout_height="84dp"
         android:layout_marginTop="40dp"

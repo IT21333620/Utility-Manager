@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.utilitymanager.adpters.ItemAdepter
 import com.example.utilitymanager.models.ElectroItemModel
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
 
@@ -42,26 +43,31 @@ class view_configration_electricity : Fragment() {
     }
     private fun getItemData(){
 
-        dbRef = FirebaseDatabase.getInstance().getReference("electric_item")
+        val currentUser = FirebaseAuth.getInstance().currentUser
+        val userId = currentUser?.uid ?: ""
 
-        dbRef.addValueEventListener(object : ValueEventListener{
+        val query = FirebaseDatabase.getInstance().getReference("electric_item")
+            .orderByChild("userId")
+            .equalTo(userId)
+
+        query.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
                 itemList.clear()
                 if (snapshot.exists()){
-                      for (itemSnap in snapshot.children){
-                          val itemData = itemSnap.getValue(ElectroItemModel::class.java)
-                          itemList.add(itemData!!)
-                      }
+                    for (itemSnap in snapshot.children){
+                        val itemData = itemSnap.getValue(ElectroItemModel::class.java)
+                        itemList.add(itemData!!)
+                    }
                     val mAdapter = ItemAdepter(itemList)
                     itemRecyclerView.adapter = mAdapter
-                    }
+                }
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+                // Handle onCancelled event
             }
-
         })
     }
+
 
 }
