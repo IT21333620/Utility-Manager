@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.example.utilitymanager.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
+import java.math.BigDecimal
 
 class update_electricity_config : AppCompatActivity() {
 
@@ -19,6 +20,7 @@ class update_electricity_config : AppCompatActivity() {
     private lateinit var itemNumber: TextView
     private lateinit var itemHours: TextView
     private lateinit var btnUpdate: Button
+    private lateinit var usasgeView: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_update_electricity_config)
@@ -35,6 +37,7 @@ class update_electricity_config : AppCompatActivity() {
         itemHours = findViewById(R.id.itemHours)
         btnUpdate = findViewById(R.id.btnUpdate)
         itemImage = findViewById(R.id.imgUpdateElec)
+        usasgeView = findViewById(R.id.itemUsage)
 
         itemImage.setImageResource(intent.getIntExtra("Img", 0))
 
@@ -50,6 +53,7 @@ class update_electricity_config : AppCompatActivity() {
         itemWatts.text = intent.getStringExtra("watts")
         itemNumber.text = intent.getStringExtra("number")
         itemHours.text = intent.getStringExtra("hours")
+        usasgeView.text = calculateUnitPrice(intent.getStringExtra("watts"),intent.getStringExtra("number"),intent.getStringExtra("hours"))
 
     }
 
@@ -84,6 +88,13 @@ class update_electricity_config : AppCompatActivity() {
             .addOnFailureListener {
                 Toast.makeText(this, "Failed to update item", Toast.LENGTH_SHORT).show()
             }
+    }
+    fun calculateUnitPrice(wattsStr: String?, itemsStr: String?, hoursStr: String?): String {
+        val watts = wattsStr!!.toDoubleOrNull() ?: return "Invalid Watts" // convert to Double
+        val items = itemsStr!!.toIntOrNull() ?: return "Invalid Items" // convert to Int
+        val hours = hoursStr!!.toIntOrNull() ?: return "Invalid Hours" // convert to Int
+        val unitPrice = (watts * hours * items) / 1000.0 // calculate unit price
+        return String.format("%.2f/unit", unitPrice) // format and return unit price string
     }
 
 }

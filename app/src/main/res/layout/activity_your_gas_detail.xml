@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView86"
+        android:id="@+id/totUsage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -40,7 +40,7 @@
         android:backgroundTint="#F44336"
         android:contentDescription="@string/cylinder_size"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView86" />
+        app:layout_constraintTop_toBottomOf="@+id/totUsage" />
 
     <TextView
         android:id="@+id/textView87"

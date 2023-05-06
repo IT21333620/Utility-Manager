@@ -267,8 +267,9 @@
     <TextView
         android:id="@+id/textView84"
         android:layout_width="411dp"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:layout_marginTop="24dp"
+        android:height="150dp"
         android:background="@drawable/navbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -338,15 +339,40 @@
         app:layout_constraintTop_toTopOf="@+id/textView84" />
 
     <TextView
-        android:id="@+id/textView86"
+        android:id="@+id/estUsage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/estimated_usage"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView84"
+        app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+    <TextView
+        android:id="@+id/totUsage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:text="@string/curr_usage"
         android:textColor="@color/orange"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textView84"
         app:layout_constraintTop_toTopOf="@+id/textView84" />
+
+    <TextView
+        android:id="@+id/txtEstElec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/curr_usage"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView84"
+        app:layout_constraintTop_toBottomOf="@+id/totUsage" />
 
     <Button
         android:id="@+id/btnNewMonth"
