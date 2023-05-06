@@ -10,8 +10,14 @@ import org.junit.Assert.*
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 class ExampleUnitTest {
+
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun testCalculateUnit() {
+        val calculateUnit = CalculateUnit()
+        assertEquals("0.36/unit", calculateUnit.testCalculateUnit("60", "2", "3"))
+        assertEquals("Invalid Watts", calculateUnit.testCalculateUnit("abc", "2", "3"))
+        assertEquals("Invalid Items", calculateUnit.testCalculateUnit("60", "xyz", "3"))
+        assertEquals("Invalid Hours", calculateUnit.testCalculateUnit("60", "2", "xyz"))
     }
+
 }
