@@ -85,10 +85,10 @@ class usage_update : AppCompatActivity() {
 
         // Update the fuel data for the selected fuelId in the Firebase Realtime Database
         dbRef.updateChildren(updatedFuelData).addOnSuccessListener {
-            Toast.makeText(this@usage_update, "Fuel data updated successfully", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@usage_update, "Successfully updated", Toast.LENGTH_LONG).show()
             finish()
         }.addOnFailureListener {
-            Toast.makeText(this@usage_update, "Failed to update fuel data", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@usage_update, "Failed to update fuel data", Toast.LENGTH_LONG).show()
         }
     }
 

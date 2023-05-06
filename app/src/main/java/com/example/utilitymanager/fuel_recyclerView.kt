@@ -69,7 +69,7 @@ class fuel_recyclerView : AppCompatActivity(), FuelAdapter.OnItemClickListener  
     override fun onDeleteClick(fuel: FuelModel) {
         val dbRef = FirebaseDatabase.getInstance().getReference("Fuel_Usage").child(fuel.fuelId.toString())
         dbRef.removeValue().addOnSuccessListener {
-            Toast.makeText(this, "Fuel data deleted", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Successfully deleted", Toast.LENGTH_LONG).show()
             // Remove the deleted item from the weekList
             weekList.remove(fuel)
             // Notify the adapter about the change

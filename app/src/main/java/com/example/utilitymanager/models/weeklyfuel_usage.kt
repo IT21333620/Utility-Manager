@@ -137,7 +137,7 @@ class weeklyfuel_usage : AppCompatActivity() {
                 Toast.makeText(
                     this@weeklyfuel_usage,
                     "Data Inserted Successfully",
-                    Toast.LENGTH_SHORT
+                    Toast.LENGTH_LONG
                 ).show()
                 val intent = Intent(this@weeklyfuel_usage, remaining_fuel::class.java)
                 intent.putExtra("fuelPrice", fuelPrice)
