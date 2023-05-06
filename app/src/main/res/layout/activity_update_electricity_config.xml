@@ -163,7 +163,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView79" />
 
         <TextView
-            android:id="@+id/textView81"
+            android:id="@+id/itemUsage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -196,7 +196,7 @@
             android:textColor="@color/orange"
             android:textSize="@dimen/sub_title"
             app:layout_constraintEnd_toEndOf="@+id/textView79"
-            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+            app:layout_constraintTop_toBottomOf="@+id/itemUsage" />
 
         <Button
             android:id="@+id/btnUpdate"

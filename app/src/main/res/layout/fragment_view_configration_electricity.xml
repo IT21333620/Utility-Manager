@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:text="@string/estimated_usage"
             android:textColor="@color/black"
             android:textSize="@dimen/sub_title"
@@ -75,22 +75,10 @@
             app:layout_constraintTop_toTopOf="@+id/textView47" />
 
         <TextView
-            android:id="@+id/textView48"
+            android:id="@+id/eleEstUsage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/current_usage"
-            android:textColor="@color/black"
-            android:textSize="@dimen/sub_title"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-        <TextView
-            android:id="@+id/textView49"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="64dp"
             android:text="@string/est_usage"
             android:textColor="@color/orange"
@@ -98,27 +86,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView47" />
 
-        <TextView
-            android:id="@+id/textView50"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="64dp"
-            android:text="@string/curr_usage"
-            android:textColor="@color/orange"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView49" />
-
         <Button
             android:id="@+id/btnElecHistory"
-            android:layout_width="159dp"
-            android:layout_height="@dimen/btn_height"
-            android:layout_marginTop="84dp"
-            android:layout_marginEnd="132dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="120dp"
             android:backgroundTint="@color/orange"
+            android:gravity="center_horizontal"
             android:text="@string/add_weekly_usage"
-            android:textSize="10sp"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView47" />
 

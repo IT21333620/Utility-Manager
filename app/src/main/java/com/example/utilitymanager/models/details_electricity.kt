@@ -53,20 +53,19 @@ class details_electricity : AppCompatActivity() {
     private fun saveElectriItemData()
     {
         val watts = entWatts.text.toString()
-        val  number = entNumber.text.toString()
-        val hours = entHours.text.toString()
+        val number = entNumber.text.toString()
+        var hours = entHours.text.toString()
         val itemName = intent.getParcelableExtra<Item>("item")?.title ?: ""
         val itemImage = intent.getParcelableExtra<Item>("item")?.image ?: 0
         val itemUrl = "android.resource://${packageName}/${itemImage}"
 
-        if(watts.isEmpty()){
-            entWatts.error = "Please enter Watts"
+        if (watts == null || number == null) {
+            Toast.makeText(this, "Please fill the fields", Toast.LENGTH_SHORT).show()
+            return
         }
-        if(number.isEmpty()){
-            entNumber.error = "Please enter Number of items"
-        }
-        if(hours.isEmpty()){
-            entHours.error = "Please enter hours"
+
+        if (hours == null){
+            hours = intent.getParcelableExtra<Item>("item")?.time?.toString() ?: "0"
         }
 
         val userId = FirebaseAuth.getInstance().currentUser?.uid ?: ""

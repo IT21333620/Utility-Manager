@@ -17,6 +17,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import java.math.BigDecimal
 
 class ItemAdepter (private val itemList: ArrayList<ElectroItemModel>)
     : RecyclerView.Adapter<ItemAdepter.ViewHolder>(){
@@ -48,6 +49,8 @@ class ItemAdepter (private val itemList: ArrayList<ElectroItemModel>)
         holder.btnDelete.setOnClickListener {
             deleteItem(position)
         }
+        val unitPrice = calculateUnitPrice(currentItem.watts, currentItem.number, currentItem.hours)
+        holder.unit.text = unitPrice
     }
 
     override fun getItemCount(): Int {
@@ -60,6 +63,7 @@ class ItemAdepter (private val itemList: ArrayList<ElectroItemModel>)
         val image: ImageView = itemView.findViewById(R.id.imgItemElec)
         val btnUpdate: FloatingActionButton = itemView.findViewById(R.id.btnUpdateItem)
         val btnDelete: Button = itemView.findViewById(R.id.btnElecDelete)
+        val unit: TextView = itemView.findViewById(R.id.elecUnit)
 
         init {
             itemView.setOnClickListener{
@@ -92,5 +96,22 @@ class ItemAdepter (private val itemList: ArrayList<ElectroItemModel>)
                 // Handle the error here
             }
         })
+    }
+    fun calculateUnitPrice(wattsStr: String?, itemsStr: String?, hoursStr: String?): String {
+        val watts = wattsStr!!.toDoubleOrNull() ?: return "Invalid Watts" // convert to Double
+        val items = itemsStr!!.toIntOrNull() ?: return "Invalid Items" // convert to Int
+        val hours = hoursStr!!.toIntOrNull() ?: return "Invalid Hours" // convert to Int
+        val unitPrice = (watts * hours * items) / 1000.0 // calculate unit price
+        return String.format("%.2f/unit", unitPrice) // format and return unit price string
+    }
+
+    fun getTotalUnitPrice(): Double {
+        var totalUnitPrice = 0.0
+        for (item in itemList) {
+            val totPrice = calculateUnitPrice(item.watts,item.number,item.hours)
+            val totalItemPrice = BigDecimal(totPrice).multiply(BigDecimal(30)).toDouble()
+            totalUnitPrice += totalItemPrice
+        }
+        return totalUnitPrice
     }
 }

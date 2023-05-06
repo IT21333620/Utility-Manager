@@ -1,10 +1,12 @@
 package com.example.utilitymanager.models
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import com.example.utilitymanager.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -17,6 +19,7 @@ class electricity_history : AppCompatActivity() {
     private lateinit var entWeek2: EditText
     private lateinit var entWeek3: EditText
     private lateinit var entWeek4: EditText
+    private lateinit var currUsage: TextView
 
     private lateinit var btnweek1: Button
     private lateinit var btnweek2: Button
@@ -32,10 +35,17 @@ class electricity_history : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_electricity_history)
 
+        val currUsageTextView = findViewById<TextView>(R.id.txtEstElec)
+        val intent = intent
+        val estimate = intent.getStringExtra("usage")
+
+        currUsageTextView.text = estimate.toString()
+
         entWeek1 = findViewById(R.id.week1Units)
         entWeek2 = findViewById(R.id.week2Units)
         entWeek3 = findViewById(R.id.week3Units)
         entWeek4 = findViewById(R.id.week4Units)
+        currUsage = findViewById(R.id.totUsage)
 
         btnweek1 = findViewById(R.id.btnWeek1)
         btnweek2 = findViewById(R.id.btnWeek2)
@@ -58,6 +68,7 @@ class electricity_history : AppCompatActivity() {
         if (uid != null) {
             val database = FirebaseDatabase.getInstance().getReference("users").child(uid).child("usage")
             database.addListenerForSingleValueEvent(object : ValueEventListener {
+                var totalUsage = 0
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     // loop through all child nodes and update usage data if available
                     for (weekSnapshot in dataSnapshot.children) {
@@ -88,7 +99,18 @@ class electricity_history : AppCompatActivity() {
                             entWeek4.setTextColor(resources.getColor(R.color.orange))
                             btnweek4.visibility = View.GONE
                         }
+                        totalUsage += weekUsage?.toInt() ?: 0
                     }
+                    currUsage.text = totalUsage.toString()
+
+                    var est = estimate?.toDouble()
+                    if (est != null) {
+                        if ( totalUsage > est*(80/100) ){
+                            var intent = Intent(this@electricity_history,electricity_warning_notification::class.java)
+                            startActivity(intent)
+                        }
+                    }
+
                 }
 
                 override fun onCancelled(databaseError: DatabaseError) {
@@ -104,6 +126,8 @@ class electricity_history : AppCompatActivity() {
             btnweek1.visibility = View.GONE
             entWeek1.isEnabled = false
             entWeek1.setTextColor(resources.getColor(R.color.orange))
+
+            updateTotalUsage()
         }
         btnweek2.setOnClickListener {
             val usage = entWeek2.text.toString().toInt()
@@ -112,6 +136,8 @@ class electricity_history : AppCompatActivity() {
             btnweek2.visibility = View.GONE
             entWeek2.isEnabled = false
             entWeek2.setTextColor(resources.getColor(R.color.orange))
+
+            updateTotalUsage()
         }
         btnweek3.setOnClickListener {
             val usage = entWeek3.text.toString().toInt()
@@ -120,6 +146,8 @@ class electricity_history : AppCompatActivity() {
             btnweek3.visibility = View.GONE
             entWeek3.isEnabled = false
             entWeek3.setTextColor(resources.getColor(R.color.orange))
+
+            updateTotalUsage()
         }
         btnweek4.setOnClickListener {
             val usage = entWeek4.text.toString().toInt()
@@ -128,8 +156,26 @@ class electricity_history : AppCompatActivity() {
             btnweek4.visibility = View.GONE
             entWeek4.isEnabled = false
             entWeek4.setTextColor(resources.getColor(R.color.orange))
+
+            updateTotalUsage()
         }
 
+    }
+    private fun updateTotalUsage() {
+        var totalUsage = 0
+        if (week1Entered) {
+            totalUsage += entWeek1.text.toString().toInt()
+        }
+        if (week2Entered) {
+            totalUsage += entWeek2.text.toString().toInt()
+        }
+        if (week3Entered) {
+            totalUsage += entWeek3.text.toString().toInt()
+        }
+        if (week4Entered) {
+            totalUsage += entWeek4.text.toString().toInt()
+        }
+        currUsage.text = totalUsage.toString()
     }
 
     fun saveUsageForWeek(weekNum: Int, usage: Int) {
@@ -180,10 +226,15 @@ class electricity_history : AppCompatActivity() {
                         week2Entered = false
                         week3Entered = false
                         week4Entered = false
+                        entWeek1.isEnabled = true
+                        entWeek2.isEnabled = true
+                        entWeek3.isEnabled = true
+                        entWeek4.isEnabled = true
                         btnweek1.visibility = View.VISIBLE
                         btnweek2.visibility = View.VISIBLE
                         btnweek3.visibility = View.VISIBLE
                         btnweek4.visibility = View.VISIBLE
+                        currUsage.text = "0"
                     } else {
                         // handle error
                     }
