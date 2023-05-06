@@ -10,12 +10,11 @@
         android:id="@+id/loginSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="776dp"
+        android:layout_marginTop="736dp"
         android:text="@string/sign_up"
         android:textColor="@color/orange"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,13 +42,12 @@
         android:id="@+id/textView61"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="132dp"
+        android:layout_marginBottom="220dp"
         android:text="@string/no_account"
         android:textColor="@color/black"
         android:textSize="@dimen/reg_sub"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -135,41 +133,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginSignIn" />
-
-    <TextView
-        android:id="@+id/textView109"
-        android:layout_width="291dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="22dp"
-        android:background="@android:drawable/editbox_background"
-        android:backgroundTint="@color/gray"
-        android:hint="."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView66" />
-
-    <ImageView
-        android:id="@+id/imageView34"
-        android:layout_width="29dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginBottom="216dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_google" />
-
-    <TextView
-        android:id="@+id/textView110"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="72dp"
-        android:text="@string/sign_in_with_google"
-        android:textColor="@color/black"
-        android:textSize="@dimen/reg_sub"
-        app:layout_constraintEnd_toEndOf="@+id/textView109"
-        app:layout_constraintTop_toTopOf="@+id/textView109" />
 
     <EditText
         android:id="@+id/loginPassword"

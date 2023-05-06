@@ -8,6 +8,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import com.example.utilitymanager.R
+import com.example.utilitymanager.view_configration_electricity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -63,7 +65,6 @@ class electricity_history : AppCompatActivity() {
         }
 
 
-        // Set the onClickListeners for the buttons
         val uid = FirebaseAuth.getInstance().currentUser?.uid
         if (uid != null) {
             val database = FirebaseDatabase.getInstance().getReference("users").child(uid).child("usage")

@@ -45,7 +45,7 @@
             android:layout_marginEnd="24dp"
             android:ems="10"
             android:hint="@string/handred"
-            android:inputType="textPersonName"
+            android:inputType="number"
             android:textSize="@dimen/sub_title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView79" />
@@ -82,7 +82,7 @@
             android:layout_marginEnd="24dp"
             android:ems="10"
             android:hint="@string/five"
-            android:inputType="textPersonName"
+            android:inputType="number"
             android:minHeight="48dp"
             android:textSize="@dimen/sub_title"
             app:layout_constraintEnd_toEndOf="parent"
@@ -96,7 +96,7 @@
             android:layout_marginEnd="24dp"
             android:ems="10"
             android:hint="@string/sixhours"
-            android:inputType="textPersonName"
+            android:inputType="number"
             android:textSize="@dimen/sub_title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/itemNumber" />
@@ -125,24 +125,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView71" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:clickable="true"
-            android:contentDescription="@string/back_btn"
-            app:backgroundTint="@color/orange"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:maxImageSize="38dp"
-            app:srcCompat="@drawable/baseline_arrow_back_24" />
 
         <TextView
             android:id="@+id/textView79"
             android:layout_width="374dp"
-            android:layout_height="96dp"
+            android:layout_height="75dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/squre1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -155,7 +142,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:text="@string/you_usage"
             android:textColor="@color/orange"
             android:textSize="@dimen/sub_title"
@@ -166,37 +153,13 @@
             android:id="@+id/itemUsage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="64dp"
             android:text="@string/ten"
             android:textColor="@color/orange"
             android:textSize="@dimen/sub_title"
             app:layout_constraintEnd_toEndOf="@+id/textView79"
             app:layout_constraintTop_toTopOf="@+id/textView79" />
-
-        <TextView
-            android:id="@+id/textView82"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/globel_avg"
-            android:textColor="@color/orange"
-            android:textSize="@dimen/sub_title"
-            app:layout_constraintStart_toStartOf="@+id/textView79"
-            app:layout_constraintTop_toBottomOf="@+id/textView80" />
-
-        <TextView
-            android:id="@+id/textView83"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="64dp"
-            android:text="@string/twenty_five"
-            android:textColor="@color/orange"
-            android:textSize="@dimen/sub_title"
-            app:layout_constraintEnd_toEndOf="@+id/textView79"
-            app:layout_constraintTop_toBottomOf="@+id/itemUsage" />
 
         <Button
             android:id="@+id/btnUpdate"

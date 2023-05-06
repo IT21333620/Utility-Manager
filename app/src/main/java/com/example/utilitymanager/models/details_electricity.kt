@@ -1,5 +1,6 @@
 package com.example.utilitymanager.models
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -19,6 +20,7 @@ class details_electricity : AppCompatActivity() {
     private lateinit var entNumber: EditText
     private lateinit var entHours: EditText
     private lateinit var btnSubmit: FloatingActionButton
+    private lateinit var btnBack: FloatingActionButton
 
     private lateinit var dbRef: DatabaseReference
 
@@ -39,7 +41,13 @@ class details_electricity : AppCompatActivity() {
         entNumber = findViewById(R.id.textNumber)
         entHours = findViewById(R.id.TextHours)
         btnSubmit = findViewById(R.id.btnSubmit)
+        btnBack = findViewById(R.id.btnBackElec)
 
+
+        btnBack.setOnClickListener{
+            var intent = Intent(this, recyclierView::class.java)
+            startActivity(intent)
+        }
 
         dbRef = FirebaseDatabase.getInstance().getReference("electric_item")
 
@@ -85,6 +93,9 @@ class details_electricity : AppCompatActivity() {
         dbRef.child(itemId).setValue(elecItem)
             .addOnCompleteListener{
                 Toast.makeText(this,"Data inserted Successfully",Toast.LENGTH_SHORT).show()
+                entWatts.setText("")
+                entNumber.setText("")
+                entHours.setText("")
             }.addOnFailureListener(){ err ->
                 Toast.makeText(this,"Error ${err.message}",Toast.LENGTH_SHORT).show()
             }

@@ -155,7 +155,7 @@
             app:srcCompat="@drawable/plus_icon" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton8"
+            android:id="@+id/btnBackElec"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
