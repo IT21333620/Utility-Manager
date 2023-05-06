@@ -14,13 +14,13 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".models.Delete_Gas"
+            android:name=".delete_water_data"
             android:exported="false" />
         <activity
-            android:name=".UsageData"
+            android:name=".water_historylist"
             android:exported="false" />
         <activity
-            android:name=".models.DataUsage"
+            android:name=".water_weekly_history"
             android:exported="false" />
         <activity
             android:name=".models.Edit_gas_detail"
@@ -51,7 +51,7 @@
             android:exported="false" />
         <activity
             android:name=".models.recyclierView"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".models.login_page"
             android:exported="true">
@@ -74,13 +74,13 @@
             android:name=".models.details_electricity"
             android:exported="false" />
         <activity
-            android:name=".monthly_water_bill"
+            android:name=".models.monthly_water_bill"
             android:exported="false" />
         <activity
-            android:name=".edit_user_information"
+            android:name=".models.edit_user_information"
             android:exported="false" />
         <activity
-            android:name=".usage_update"
+            android:name=".models.usage_update"
             android:exported="false" />
         <activity
             android:name=".models.fuel_usage_history"
@@ -107,9 +107,6 @@
             android:name=".models.water_management"
             android:exported="false" />
         <activity
-            android:name=".models.electricity_manager"
-            android:exported="false" />
-        <activity
             android:name=".models.weeklyfuel_usage"
             android:exported="false" />
         <activity
@@ -117,7 +114,9 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false">
+        </activity>
+
         <activity
             android:name=".models.AllAppScreen"
             android:exported="false" />
@@ -131,8 +130,29 @@
             android:name=".OtherUti"
             android:exported="false" />
         <activity
-            android:name=".models.Add_today_screentime"
+            android:name=".fuelUsageAlert"
             android:exported="false" />
+        <activity
+            android:name=".fuel_recyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".fuel_History"
+            android:exported="false" />
+        <activity
+            android:name=".models.Add_today_screentime"
+            android:exported="false"/>
+        <activity
+            android:name=".models.Delete_Gas"
+            android:exported="false" />
+        <activity
+            android:name=".UsageData"
+            android:exported="false" />
+        <activity
+            android:name=".models.DataUsage"
+            android:exported="false" />
+
+
+
     </application>
 
 </manifest>
