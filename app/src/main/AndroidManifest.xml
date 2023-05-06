@@ -2,25 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:enableOnBackInvokedCallback="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
+
         <activity
-            android:name=".delete_water_data"
+            android:name=".models.Delete_Gas"
             android:exported="false" />
         <activity
-            android:name=".water_historylist"
+            android:name=".UsageData"
             android:exported="false" />
         <activity
-            android:name=".water_weekly_history"
+            android:name=".models.DataUsage"
             android:exported="false" />
         <activity
             android:name=".models.Edit_gas_detail"
@@ -51,7 +51,7 @@
             android:exported="false" />
         <activity
             android:name=".models.recyclierView"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".models.login_page"
             android:exported="true">
@@ -74,13 +74,13 @@
             android:name=".models.details_electricity"
             android:exported="false" />
         <activity
-            android:name=".models.monthly_water_bill"
+            android:name=".monthly_water_bill"
             android:exported="false" />
         <activity
-            android:name=".models.edit_user_information"
+            android:name=".edit_user_information"
             android:exported="false" />
         <activity
-            android:name=".models.usage_update"
+            android:name=".usage_update"
             android:exported="false" />
         <activity
             android:name=".models.fuel_usage_history"
@@ -107,6 +107,9 @@
             android:name=".models.water_management"
             android:exported="false" />
         <activity
+            android:name=".models.electricity_manager"
+            android:exported="false" />
+        <activity
             android:name=".models.weeklyfuel_usage"
             android:exported="false" />
         <activity
@@ -114,9 +117,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
-
+            android:exported="false" />
         <activity
             android:name=".models.AllAppScreen"
             android:exported="false" />
@@ -130,18 +131,8 @@
             android:name=".OtherUti"
             android:exported="false" />
         <activity
-            android:name=".fuelUsageAlert"
-            android:exported="false" />
-        <activity
-            android:name=".fuel_recyclerView"
-            android:exported="false" />
-        <activity
-            android:name=".fuel_History"
-            android:exported="false" />
-        <activity
             android:name=".models.Add_today_screentime"
             android:exported="false" />
-
     </application>
 
 </manifest>
