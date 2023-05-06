@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import com.example.utilitymanager.models.recyclierView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class Electrocity_fragment : Fragment() {
     override fun onCreateView(
@@ -18,8 +19,8 @@ class Electrocity_fragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_electrocity_fragment, container, false)
         val FragmentConfig = view_configration_electricity()
-        val btnNewConfiguration = view.findViewById<Button>(R.id.btnNewConfig)
-        val btnViewConfig = view.findViewById<Button>(R.id.btnViewConfig)
+        val btnNewConfiguration = view.findViewById<FloatingActionButton>(R.id.btnNewConfigElec)
+        val btnViewConfig = view.findViewById<FloatingActionButton>(R.id.btnViewElec)
 
         btnViewConfig.setOnClickListener {
             parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerView2,FragmentConfig)

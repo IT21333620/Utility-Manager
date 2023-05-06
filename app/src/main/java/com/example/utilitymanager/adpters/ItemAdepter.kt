@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.utilitymanager.R
@@ -61,7 +60,7 @@ class ItemAdepter (private val itemList: ArrayList<ElectroItemModel>)
 
         val title: TextView = itemView.findViewById(R.id.elecTitle)
         val image: ImageView = itemView.findViewById(R.id.imgItemElec)
-        val btnUpdate: FloatingActionButton = itemView.findViewById(R.id.btnUpdateItem)
+        val btnUpdate: FloatingActionButton = itemView.findViewById(R.id.btnNewConfigElec)
         val btnDelete: Button = itemView.findViewById(R.id.btnElecDelete)
         val unit: TextView = itemView.findViewById(R.id.elecUnit)
 

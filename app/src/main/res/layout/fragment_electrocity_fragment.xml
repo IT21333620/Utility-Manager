@@ -90,26 +90,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnViewConfig"
-        android:layout_width="73dp"
-        android:layout_height="50dp"
-
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="#00FFFFFF"
-        android:text="@string/new_config"
-        android:textColor="@color/orange"
-        android:textSize="0sp"
-        android:textStyle="bold"
-        app:icon="@drawable/arrow"
-        app:iconGravity="textEnd"
-        app:iconSize="100dp"
-        app:iconTint="@color/orange"
-        app:iconTintMode="src_in"
-        app:layout_constraintBottom_toBottomOf="@+id/sqr8"
-        app:layout_constraintEnd_toEndOf="@+id/sqr8" />
-
     <TextView
         android:id="@+id/elec_manager8"
         android:layout_width="wrap_content"
@@ -148,24 +128,32 @@
         app:layout_constraintEnd_toEndOf="@+id/sqr7"
         app:layout_constraintTop_toTopOf="@+id/sqr7" />
 
-    <Button
-        android:id="@+id/btnNewConfig"
-        android:layout_width="73dp"
-        android:layout_height="50dp"
-
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="#00FFFFFF"
-        android:text="@string/new_config"
-        android:textColor="@color/orange"
-        android:textSize="0sp"
-        android:textStyle="bold"
-        app:icon="@drawable/arrow"
-        app:iconGravity="textEnd"
-        app:iconSize="100dp"
-        app:iconTint="@color/orange"
-        app:iconTintMode="src_in"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnNewConfigElec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/next"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:backgroundTint="@color/orange"
         app:layout_constraintBottom_toBottomOf="@+id/sqr7"
-        app:layout_constraintEnd_toEndOf="@+id/sqr7" />
+        app:layout_constraintEnd_toEndOf="@+id/sqr7"
+        app:maxImageSize="@dimen/icon_arrow_size" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnViewElec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:contentDescription="@string/next"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="@+id/sqr8"
+        app:layout_constraintEnd_toEndOf="@+id/sqr8"
+        app:maxImageSize="@dimen/icon_arrow_size" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@
         tools:context=".models.water_management">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton8"
+            android:id="@+id/btnBackElec"
             android:layout_width="@dimen/next_btn"
             android:layout_height="@dimen/next_btn"
             android:layout_marginEnd="28dp"
