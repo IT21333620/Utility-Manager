@@ -31,7 +31,7 @@ class fuel_fragment : Fragment() {
         val history = view.findViewById<Button>(R.id.button)
         history.setOnClickListener {
             // Create an Intent to navigate to the desired activity
-            val intent = Intent(activity, fuel_usage_history::class.java)
+            val intent = Intent(activity, fuel_recyclerView::class.java)
             startActivity(intent)
         }
 

@@ -29,6 +29,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="468dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/delete"
+            app:layout_constraintTop_toTopOf="@+id/textView15"
+            tools:layout_editor_absoluteX="198dp" />
+
+        <Button
+            android:id="@+id/button28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="468dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/update"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView15" />
+
         <TextView
             android:id="@+id/textView44"
             android:layout_width="414dp"
@@ -78,11 +99,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
-            android:layout_marginEnd="8dp"
             android:backgroundTint="@color/orange"
             android:text="@string/delete"
-            app:layout_constraintEnd_toStartOf="@+id/button23"
-            app:layout_constraintTop_toTopOf="@+id/textView15" />
+            app:layout_constraintTop_toTopOf="@+id/textView15"
+            tools:layout_editor_absoluteX="207dp" />
 
         <Button
             android:id="@+id/button23"
@@ -109,6 +129,27 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="268dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/delete"
+            app:layout_constraintTop_toTopOf="@+id/textView15"
+            tools:layout_editor_absoluteX="207dp" />
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="268dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/update"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView15" />
 
         <TextView
             android:id="@+id/textView25"
@@ -173,6 +214,24 @@
             android:textSize="@dimen/week_subtitle"
             app:layout_constraintTop_toBottomOf="@+id/textView45"
             tools:layout_editor_absoluteX="16dp" />
+
+        <Button
+            android:id="@+id/button37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange"
+            android:text="@string/delete"
+            tools:layout_editor_absoluteX="201dp"
+            tools:layout_editor_absoluteY="811dp" />
+
+        <Button
+            android:id="@+id/button38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange"
+            android:text="@string/update"
+            tools:layout_editor_absoluteX="297dp"
+            tools:layout_editor_absoluteY="811dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

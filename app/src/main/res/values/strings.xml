@@ -257,5 +257,13 @@
     <string name="gas_detail_add">Add Details</string>
     <string name="available_weekly">Weekly Usage</string>
     <string name="cover">Cover</string>
+    <string name="field5">Fuel Type</string>
+    <string-array name="types">
+        <item>Lanka Petrol 92</item>
+        <item>Lanka Petrol 95</item>
+        <item>Lanka Auto Diesel</item>
+        <item>Lanka Super Diesel</item>
+    </string-array>
+
 
 </resources>

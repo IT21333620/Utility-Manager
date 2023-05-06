@@ -10,47 +10,70 @@
         android:id="@+id/textView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="208dp"
         android:text="@string/usage"
         android:textColor="@color/black"
         android:textSize="@dimen/sub_title"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="208dp"
-        android:layout_marginBottom="372dp"
-        android:text="@string/distance"
-        android:textColor="@color/black"
-        android:textSize="@dimen/sub_title"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <EditText
+        android:id="@+id/editTextTextPersonName14"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="160dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/kmltr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <TextView
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="208dp"
-        android:layout_marginBottom="256dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="200dp"
         android:text="@string/filled"
         android:textColor="@color/black"
         android:textSize="@dimen/sub_title"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName15" />
+
+    <TextView
+        android:id="@+id/textView113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="280dp"
+        android:text="@string/field5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sub_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName16" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName16"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="152dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/liters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
     <TextView
         android:id="@+id/circle14"
         android:layout_width="212dp"
         android:layout_height="212dp"
         android:layout_marginEnd="284dp"
-        android:layout_marginBottom="624dp"
         android:background="@drawable/circle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton16"
@@ -71,10 +94,10 @@
         android:layout_width="235dp"
         android:layout_height="235dp"
         android:layout_marginStart="264dp"
-        android:layout_marginBottom="568dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/circle2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView27"
@@ -102,40 +125,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName14"
-        android:layout_width="215dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="252dp"
-        android:layout_marginEnd="164dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/kmltr"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
         android:id="@+id/editTextTextPersonName15"
         android:layout_width="215dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginBottom="304dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="156dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/km"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName16"
-        android:layout_width="215dp"
-        android:layout_height="60dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginBottom="184dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/liters"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="204dp"
+        android:text="@string/distance"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sub_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName14" />
 
     <Button
         android:id="@+id/button7"
@@ -146,16 +157,30 @@
         android:text="@string/calnup"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="174dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="64dp"
-        android:contentDescription="@string/select2"
-        android:entries="@array/weeks"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/updateweek"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName18"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView113" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
