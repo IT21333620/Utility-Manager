@@ -67,38 +67,38 @@ class details_electricity : AppCompatActivity() {
         val itemImage = intent.getParcelableExtra<Item>("item")?.image ?: 0
         val itemUrl = "android.resource://${packageName}/${itemImage}"
 
-        if (watts == null || number == null) {
+        if ((watts.isNullOrEmpty() || number.isNullOrEmpty())) {
             Toast.makeText(this, "Please fill the fields", Toast.LENGTH_SHORT).show()
             return
-        }
-
-        if (hours == null){
-            hours = intent.getParcelableExtra<Item>("item")?.time?.toString() ?: "0"
-        }
-
-        val userId = FirebaseAuth.getInstance().currentUser?.uid ?: ""
-        val itemId = dbRef.push().key!!
-
-        val elecItem = ElectroItemModel(
-            itemId,
-            watts,
-            number,
-            hours,
-            itemName,
-            itemImage,
-            itemUrl,
-            userId
-        )
-
-        dbRef.child(itemId).setValue(elecItem)
-            .addOnCompleteListener{
-                Toast.makeText(this,"Data inserted Successfully",Toast.LENGTH_SHORT).show()
-                entWatts.setText("")
-                entNumber.setText("")
-                entHours.setText("")
-            }.addOnFailureListener(){ err ->
-                Toast.makeText(this,"Error ${err.message}",Toast.LENGTH_SHORT).show()
+        } else{
+            if (hours == null){
+                hours = intent.getParcelableExtra<Item>("item")?.time?.toString() ?: "0"
             }
 
+            val userId = FirebaseAuth.getInstance().currentUser?.uid ?: ""
+            val itemId = dbRef.push().key!!
+
+            val elecItem = ElectroItemModel(
+                itemId,
+                watts,
+                number,
+                hours,
+                itemName,
+                itemImage,
+                itemUrl,
+                userId
+            )
+
+            dbRef.child(itemId).setValue(elecItem)
+                .addOnCompleteListener{
+                    Toast.makeText(this,"Data inserted Successfully",Toast.LENGTH_SHORT).show()
+                    entWatts.setText("")
+                    entNumber.setText("")
+                    entHours.setText("")
+                }.addOnFailureListener(){ err ->
+                    Toast.makeText(this,"Error ${err.message}",Toast.LENGTH_SHORT).show()
+                }
+
+        }
     }
 }
