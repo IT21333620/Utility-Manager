@@ -6,6 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".models.weekly_usage">
 
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="191dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="204dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/view_history"
+        app:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="191dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/back_btn"
+        app:backgroundTint="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/textView108"
         android:layout_width="235dp"
@@ -23,20 +45,21 @@
         android:id="@+id/textView21"
         android:layout_width="235dp"
         android:layout_height="53dp"
-        android:layout_marginTop="476dp"
         android:layout_marginEnd="128dp"
         android:background="@color/gray"
         android:hint="  LKR (avg)"
         android:textColorHint="@color/material_dynamic_neutral50"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="235dp"
         android:layout_height="53dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="340dp"
         android:layout_marginEnd="128dp"
         android:background="@color/gray"
         android:hint="  units/cubic meters"
@@ -44,19 +67,6 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton4"
-        android:layout_width="@dimen/next_btn"
-        android:layout_height="@dimen/next_btn"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="44dp"
-        android:clickable="true"
-        android:contentDescription="@string/water_manager"
-        app:backgroundTint="@color/orange"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/front_arrow" />
 
     <TextView
         android:id="@+id/circle8"
@@ -90,20 +100,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:clickable="true"
-        android:contentDescription="@string/back_btn"
-        app:backgroundTint="@color/orange"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:maxImageSize="38dp"
-        app:srcCompat="@drawable/baseline_arrow_back_24" />
-
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
@@ -123,7 +119,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="276dp"
-        android:text="@string/total_water_units"
+        android:text="Total Water Units"
         android:textColor="@color/black"
         android:textSize="23sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -133,23 +129,12 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="284dp"
-        android:text="@string/weekly_cost"
+        android:layout_marginEnd="264dp"
+        android:layout_marginBottom="384dp"
+        android:text="Weekly Cost"
         android:textColor="@color/black"
         android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="191dp"
-        android:layout_height="@dimen/btn_height"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="100dp"
-        android:text="@string/view_monthly_bill"
-        app:backgroundTint="@color/orange"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

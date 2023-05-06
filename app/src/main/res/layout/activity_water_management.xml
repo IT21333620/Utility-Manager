@@ -12,8 +12,8 @@
         android:id="@+id/circle3"
         android:layout_width="235dp"
         android:layout_height="235dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginBottom="564dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginBottom="640dp"
         android:background="@drawable/circle2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -37,8 +37,8 @@
         android:id="@+id/circle"
         android:layout_width="212dp"
         android:layout_height="212dp"
-        android:layout_marginEnd="284dp"
-        android:layout_marginBottom="604dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="688dp"
         android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -47,8 +47,20 @@
         android:id="@+id/button"
         android:layout_width="163dp"
         android:layout_height="56dp"
-        android:layout_marginEnd="224dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginBottom="108dp"
+
+        android:backgroundTint="@color/orange"
+        android:text="@string/user_information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="163dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginBottom="184dp"
 
         android:backgroundTint="@color/orange"
         android:text="@string/view_history"
@@ -61,7 +73,7 @@
         android:layout_height="372dp"
         android:layout_marginStart="88dp"
         android:layout_marginEnd="88dp"
-        android:layout_marginBottom="188dp"
+        android:layout_marginBottom="268dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.549"
@@ -72,13 +84,13 @@
         android:id="@+id/floatingActionButton"
         android:layout_width="56dp"
         android:layout_height="57dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="40dp"
         android:clickable="true"
         android:contentDescription="@string/water_manager"
         app:backgroundTint="@color/orange"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:srcCompat="@drawable/front_arrow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

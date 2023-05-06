@@ -16,6 +16,8 @@
     <string name="washing">Washing</string>
     <string name="gardening">Gardening</string>
     <string name="other">Other</string>
+    <string name="delete_water_data">Delete Water Data</string>
+    <string name="total_water_liters_for_month">Total water consumption for month</string>
     <string name="standard_values">Standard Values (liters)</string>
     <string name="register">Register Vehicle</string>
     <string name="name">Vehicle Name</string>

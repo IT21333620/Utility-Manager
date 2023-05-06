@@ -10,10 +10,23 @@
         android:id="@+id/textView107"
         android:layout_width="235dp"
         android:layout_height="53dp"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="476dp"
         android:layout_marginEnd="128dp"
         android:background="@color/gray"
         android:hint="  LKR (avg)"
+        android:textColorHint="@color/material_dynamic_neutral50"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView113"
+        android:layout_width="235dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="120dp"
+        android:background="@color/gray"
+        android:hint="liters"
         android:textColorHint="@color/material_dynamic_neutral50"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="332dp"
+        android:layout_marginTop="428dp"
         android:text="@string/Monthly_cost"
         android:textColor="@color/black"
         android:textSize="@dimen/week_subtitle"
@@ -35,35 +48,33 @@
         android:id="@+id/circle12"
         android:layout_width="212dp"
         android:layout_height="212dp"
-        android:layout_marginEnd="284dp"
-        android:layout_marginBottom="604dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="692dp"
         android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:clickable="true"
-        android:contentDescription="@string/back_btn"
-        app:backgroundTint="@color/orange"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:maxImageSize="38dp"
-        app:srcCompat="@drawable/baseline_arrow_back_24" />
 
     <TextView
         android:id="@+id/circle14"
         android:layout_width="235dp"
         android:layout_height="235dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginBottom="564dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginBottom="656dp"
         android:background="@drawable/circle2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/total_water_liters_for_month"
+        android:textColor="@color/black"
+        android:textSize="@dimen/week_subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/elec_manager6"
@@ -84,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="316dp"
         android:text="@string/total_water_units_for_months"
         android:textColor="@color/black"
         android:textSize="@dimen/week_subtitle"
@@ -95,8 +106,8 @@
         android:id="@+id/textView106"
         android:layout_width="235dp"
         android:layout_height="53dp"
-        android:layout_marginTop="240dp"
-        android:layout_marginEnd="128dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="120dp"
         android:background="@color/gray"
         android:hint="  units"
         android:textColorHint="@color/material_dynamic_neutral50"
@@ -106,12 +117,23 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="314dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="464dp"
+        android:layout_width="231dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="556dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_every_drop_count" />
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="183dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/back_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
