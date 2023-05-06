@@ -18,13 +18,12 @@
             android:id="@+id/button22"
             android:layout_width="147dp"
             android:layout_height="@dimen/btn_height"
-            android:layout_marginStart="236dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="36dp"
             android:backgroundTint="@color/orange"
             android:text="@string/view_history"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button3"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.893"
             app:layout_constraintStart_toStartOf="parent" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton

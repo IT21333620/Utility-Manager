@@ -80,7 +80,7 @@
             android:name=".models.edit_user_information"
             android:exported="false" />
         <activity
-            android:name=".usage_update"
+            android:name=".models.usage_update"
             android:exported="false" />
         <activity
             android:name=".models.fuel_usage_history"
@@ -130,8 +130,18 @@
             android:name=".OtherUti"
             android:exported="false" />
         <activity
+            android:name=".fuelUsageAlert"
+            android:exported="false" />
+        <activity
+            android:name=".fuel_recyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".fuel_History"
+            android:exported="false" />
+        <activity
             android:name=".models.Add_today_screentime"
             android:exported="false" />
+
     </application>
 
 </manifest>
