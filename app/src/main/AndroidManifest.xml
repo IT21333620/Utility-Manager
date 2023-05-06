@@ -14,6 +14,15 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".delete_water_data"
+            android:exported="false" />
+        <activity
+            android:name=".water_historylist"
+            android:exported="false" />
+        <activity
+            android:name=".water_weekly_history"
+            android:exported="false" />
+        <activity
             android:name=".models.Edit_gas_detail"
             android:exported="false" />
         <activity
@@ -65,10 +74,10 @@
             android:name=".models.details_electricity"
             android:exported="false" />
         <activity
-            android:name=".monthly_water_bill"
+            android:name=".models.monthly_water_bill"
             android:exported="false" />
         <activity
-            android:name=".edit_user_information"
+            android:name=".models.edit_user_information"
             android:exported="false" />
         <activity
             android:name=".usage_update"
