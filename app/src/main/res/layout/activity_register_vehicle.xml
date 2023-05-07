@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:contentDescription="@string/select1"
-    tools:context=".models.register_vehicle">
+    tools:context=".activities.register_vehicle">
 
     <TextView
         android:id="@+id/circle6"

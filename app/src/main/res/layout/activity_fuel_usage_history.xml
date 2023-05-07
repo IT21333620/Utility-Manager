@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".models.fuel_usage_history">
+    tools:context=".activities.fuel_usage_history">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".models.weekly_history"
+        tools:context=".activities.weekly_history"
         tools:layout_editor_absoluteX="-72dp"
         tools:layout_editor_absoluteY="-82dp">
 

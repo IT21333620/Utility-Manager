@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".models.Edit_gas_detail">
+    tools:context=".activities.Edit_gas_detail">
 
     <TextView
         android:id="@+id/sqr13"

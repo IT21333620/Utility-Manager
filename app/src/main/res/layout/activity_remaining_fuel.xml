@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".models.remaining_fuel">
+    tools:context=".activities.remaining_fuel">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="12dp"
-        tools:context=".models.remaining_fuel"
+        tools:context=".activities.remaining_fuel"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-92dp">
 

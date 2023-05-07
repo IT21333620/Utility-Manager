@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".models.usage_update">
+    tools:context=".activities.usage_update">
 
     <TextView
         android:id="@+id/textView29"
