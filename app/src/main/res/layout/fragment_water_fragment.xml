@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Water_fragment">
+    tools:context=".fragments.Water_fragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -16,7 +16,7 @@
         android:layout_height="match_parent"
         android:background="@color/orange"
         android:backgroundTint="@color/white"
-        tools:context=".models.water_management">
+        tools:context=".activities.water_management">
 
         <Button
             android:id="@+id/button34"

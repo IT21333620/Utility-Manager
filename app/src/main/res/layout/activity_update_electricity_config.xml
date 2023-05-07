@@ -14,7 +14,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".models.update_electricity_config">
+        tools:context=".activities.update_electricity_config">
 
         <TextView
             android:id="@+id/textView69"

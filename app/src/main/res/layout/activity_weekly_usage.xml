@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".models.weekly_usage">
+    tools:context=".activities.weekly_usage">
 
     <Button
         android:id="@+id/button23"

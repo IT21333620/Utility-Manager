@@ -16,7 +16,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".Home_fragment">
+        tools:context=".fragments.Home_fragment">
 
         <TextView
             android:id="@+id/circle19"

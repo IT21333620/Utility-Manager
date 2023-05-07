@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".models.Add_screen_time">
+    tools:context=".activities.Add_screen_time">
 
     <TextView
         android:id="@+id/sqr6"

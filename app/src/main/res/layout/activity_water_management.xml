@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/orange"
     android:backgroundTint="@color/white"
-    tools:context=".models.water_management">
+    tools:context=".activities.water_management">
 
     <TextView
         android:id="@+id/circle3"
