@@ -125,7 +125,7 @@ class user_information : AppCompatActivity() {
 
         dbRef.child(week).setValue(water)
             .addOnCompleteListener{
-                Toast.makeText( this, "Data inserted successfully",Toast.LENGTH_SHORT).show()
+                Toast.makeText( this, "Data inserted successfully",Toast.LENGTH_LONG).show()
             }.addOnFailureListener{ err ->
                 Toast.makeText( this, "Error ${err.message}",Toast.LENGTH_LONG).show()
             }
