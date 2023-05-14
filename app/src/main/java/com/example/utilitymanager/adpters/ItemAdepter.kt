@@ -60,9 +60,9 @@ class ItemAdepter (private val itemList: ArrayList<ElectroItemModel>)
 
         val title: TextView = itemView.findViewById(R.id.elecTitle)
         val image: ImageView = itemView.findViewById(R.id.imgItemElec)
-        val btnUpdate: FloatingActionButton = itemView.findViewById(R.id.btnNewConfigElec)
-        val btnDelete: Button = itemView.findViewById(R.id.btnElecDelete)
-        val unit: TextView = itemView.findViewById(R.id.elecUnit)
+        val btnUpdate: FloatingActionButton = itemView.findViewById(R.id.btnElectroUpdate)
+        val btnDelete: Button = itemView.findViewById(R.id.btnElectroDelete)
+        val unit: TextView = itemView.findViewById(R.id.NumOfUnits)
 
         init {
             itemView.setOnClickListener{

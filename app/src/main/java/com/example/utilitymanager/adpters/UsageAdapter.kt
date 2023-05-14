@@ -1,4 +1,4 @@
-package com.example.utilitymanager.activities
+package com.example.utilitymanager.adpters
 
 import android.view.LayoutInflater
 import android.view.View

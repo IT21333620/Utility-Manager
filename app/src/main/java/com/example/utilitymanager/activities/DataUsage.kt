@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.utilitymanager.R
+import com.example.utilitymanager.adpters.UsageAdapter
 import com.example.utilitymanager.dataClasses.Usage
 import com.google.firebase.database.*
 

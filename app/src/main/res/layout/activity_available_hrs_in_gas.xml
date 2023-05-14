@@ -7,23 +7,11 @@
     tools:context=".activities.available_hrs_in_gas">
 
     <TextView
-        android:id="@+id/sqr11"
-        android:layout_width="289dp"
-        android:layout_height="253dp"
-        android:layout_marginTop="236dp"
-        android:layout_marginEnd="60dp"
-        android:width="150dp"
-        android:height="150dp"
-        android:background="@drawable/squre1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/circle20"
         android:layout_width="212dp"
         android:layout_height="212dp"
-        android:layout_marginEnd="272dp"
-        android:layout_marginBottom="716dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="768dp"
         android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -33,7 +21,7 @@
         android:layout_width="235dp"
         android:layout_height="235dp"
         android:layout_marginStart="276dp"
-        android:layout_marginBottom="700dp"
+        android:layout_marginBottom="728dp"
         android:background="@drawable/circle2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -42,7 +30,7 @@
         android:id="@+id/imageView18"
         android:layout_width="92dp"
         android:layout_height="84dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -52,75 +40,27 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="84dp"
         android:text="@string/gas"
         android:textAlignment="center"
         android:textColor="#F44336"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView65"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="96dp"
-        android:text="@string/awailable_hours_remaining"
-        android:textColor="#F44336"
-        android:textSize="18sp"
-        android:textStyle="bold"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyleViewGas"
+        android:layout_width="409dp"
+        android:layout_height="725dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sqr11" />
-
-    <TextView
-        android:id="@+id/editTextTextPersonName20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="@string/awailable_hours"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView65" />
-
-    <Button
-        android:id="@+id/loginSignIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="144dp"
-        android:backgroundTint="@color/orange"
-        android:text="@string/weekgasamount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sqr11" />
-
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="124dp"
-        android:backgroundTint="@color/orange"
-        android:text="Update Gas Details"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginSignIn" />
-
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="152dp"
-        android:backgroundTint="@color/orange"
-        android:text="Delete GAs"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button15" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
