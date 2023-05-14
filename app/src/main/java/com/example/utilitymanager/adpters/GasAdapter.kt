@@ -49,7 +49,10 @@ class GasAdapter(private val gasList: ArrayList<Gas>)
         holder.btnDelete.setOnClickListener {
             deleteGas(position)
         }
-
+        val remain_gas = (currentGas.cylinderSize?.toDoubleOrNull() ?: 0.0) * 14.2 * 0.8 /
+                (currentGas.numBerners?.toIntOrNull() ?: 1) /
+                (currentGas.burnRate?.toDoubleOrNull() ?: 1.0)
+        holder.remain.text = remain_gas.toString()
 
     }
 
