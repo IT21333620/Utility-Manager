@@ -8,6 +8,7 @@ import android.widget.Toast
 import com.example.utilitymanager.R
 import com.example.utilitymanager.databinding.ActivityYourGasDetailBinding
 import com.example.utilitymanager.dataClasses.Gas
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -31,6 +32,10 @@ class your_gas_detail : AppCompatActivity() {
             val numBernersDouble = numBerners.toDouble()
             val burnRateDouble = burnRate.toDouble()
 
+            database = FirebaseDatabase.getInstance().getReference("Gas")
+            val userId = FirebaseAuth.getInstance().currentUser?.uid ?: ""
+            val gasId = database.push().key!!
+
             // Calculate available hours remaining
             val availableHours = (cylinderSizeDouble * 14.2 * 0.8) / (numBernersDouble * burnRateDouble)
 
@@ -38,10 +43,9 @@ class your_gas_detail : AppCompatActivity() {
             val availableHoursString = availableHours.toString()
 
             // Create Gas object with all the data
-            val gas = Gas(cylinderSize, numBerners, burnRate, availableHoursString)
+            val gas = Gas(gasId,cylinderSize, numBerners, burnRate, userId)
 
             // Save Gas object to the database
-            database = FirebaseDatabase.getInstance().getReference("Gas")
             database.child(cylinderSize).setValue(gas)
                 .addOnSuccessListener {
                     binding.cylinderSize.text.clear()
@@ -59,6 +63,8 @@ class your_gas_detail : AppCompatActivity() {
 
         buttonutton.setOnClickListener {
             val intent = Intent(this@your_gas_detail, available_hrs_in_gas::class.java)
+            val cylinderSize = binding.cylinderSize.text.toString()
+            intent.putExtra("cylinderSize", cylinderSize)
             startActivity(intent)
         }
     }

@@ -19,7 +19,7 @@ class Electrocity_fragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_electrocity_fragment, container, false)
         val FragmentConfig = view_configration_electricity()
-        val btnNewConfiguration = view.findViewById<FloatingActionButton>(R.id.btnNewConfigElec)
+        val btnNewConfiguration = view.findViewById<FloatingActionButton>(R.id.btnElectroUpdate)
         val btnViewConfig = view.findViewById<FloatingActionButton>(R.id.btnViewElec)
 
         btnViewConfig.setOnClickListener {

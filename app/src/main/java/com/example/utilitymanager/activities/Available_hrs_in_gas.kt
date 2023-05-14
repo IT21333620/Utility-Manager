@@ -5,65 +5,76 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.utilitymanager.R
+import com.example.utilitymanager.adpters.GasAdapter
+import com.example.utilitymanager.adpters.ItemAdepter
 import com.example.utilitymanager.dataClasses.Gas
+import com.example.utilitymanager.models.ElectroItemModel
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
 class available_hrs_in_gas : AppCompatActivity() {
 
-    private lateinit var database: DatabaseReference
-    private lateinit var cylinderSize: String
+    private lateinit var gasRecyclerView: RecyclerView
+    private lateinit var gasList: ArrayList<Gas>
+    private lateinit var dbRef: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_available_hrs_in_gas)
 
-        val dataTextView = findViewById<TextView>(R.id.editTextTextPersonName20)
-        val deleteGasButton = findViewById<Button>(R.id.button16)
-        val updateButton = findViewById<Button>(R.id.button15)
-        val loginButton = findViewById<Button>(R.id.loginSignIn)
+        gasRecyclerView = findViewById(R.id.recyleViewGas)
+        gasRecyclerView.layoutManager = LinearLayoutManager(this)
+        gasRecyclerView.setHasFixedSize(true)
 
-        // Get the cylinderSize value from the Intent extras
-        cylinderSize = intent.getStringExtra("cylinderSize").toString()
+        gasList = arrayListOf<Gas>()
 
-        // Get a reference to the Gas node in the database
-        database = FirebaseDatabase.getInstance().getReference("Gas")
+        getGasData()
 
-        // Retrieve the data for the specific cylinderSize
-        database.child(cylinderSize).addListenerForSingleValueEvent(object : ValueEventListener {
+    }
+    private fun getGasData(){
+
+        val currentUser = FirebaseAuth.getInstance().currentUser
+        val userId = currentUser?.uid ?: ""
+
+        val query = FirebaseDatabase.getInstance().getReference("Gas")
+            .orderByChild("userId")
+            .equalTo(userId)
+
+        query.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
-                if (snapshot.exists()) {
-                    // Extract the availableHours value from the retrieved data
-                    val gas = snapshot.getValue(Gas::class.java)
-                    val availableHours = gas?.availableHoursString
+                gasList.clear()
+                if (snapshot.exists()){
+                    for (itemSnap in snapshot.children){
+                        val gasData = itemSnap.getValue(Gas::class.java)
+                        gasList.add(gasData!!)
 
-                    // Set the text of the TextView to the availableHours value
-                    dataTextView.text = availableHours
-                } else {
-                    dataTextView.text = "Data not found"
+                        val cylinderSize = gasData.cylinderSize!!.toDouble()
+                        val numBerners = gasData.numBerners!!.toInt()
+                        val burnRate = gasData.burnRate!!.toDouble()
+                        val units = (cylinderSize * numBerners * burnRate)
+                    }
+                    val mAdapter = GasAdapter(gasList)
+                    gasRecyclerView.adapter = mAdapter
+
+                    mAdapter.setOnGasClickListener(object : GasAdapter.onGasClickListener{
+                        override fun onGasClick(position: Int) {
+                            val intent = Intent(this@available_hrs_in_gas, Edit_gas_detail::class.java)
+                            intent.putExtra("gasId",gasList[position].gasId)
+                            intent.putExtra("cylinderSize",gasList[position].cylinderSize)
+                            intent.putExtra("numBerners",gasList[position].numBerners)
+                            intent.putExtra("burnRate",gasList[position].burnRate)
+                            startActivity(intent)
+                        }
+                    })
                 }
             }
 
             override fun onCancelled(error: DatabaseError) {
-                dataTextView.text = "Error: ${error.message}"
             }
         })
-
-        loginButton.setOnClickListener {
-            val intent = Intent(this@available_hrs_in_gas, Weekly_gas_usage::class.java)
-            startActivity(intent)
-        }
-
-        updateButton.setOnClickListener {
-            val intent = Intent(this@available_hrs_in_gas, Edit_gas_detail::class.java)
-            intent.putExtra("cylinderSize", cylinderSize)
-            startActivity(intent)
-        }
-
-        deleteGasButton.setOnClickListener {
-            val intent = Intent(this@available_hrs_in_gas, Delete_Gas::class.java)
-            intent.putExtra("cylinderSize", cylinderSize)
-            startActivity(intent)
-        }
     }
 }
