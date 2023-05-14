@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".water_historylist">
 
-<!--    <Button-->
-<!--        android:id="@+id/button36"-->
-<!--        android:layout_width="143dp"-->
-<!--        android:layout_height="@dimen/btn_height"-->
-<!--        android:layout_marginStart="176dp"-->
-<!--        android:layout_marginBottom="28dp"-->
-<!--        android:text="@string/back_btn"-->
-<!--        app:backgroundTint="@color/orange"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent" />-->
-
     <Button
         android:id="@+id/btnUpdate"
         android:layout_width="wrap_content"

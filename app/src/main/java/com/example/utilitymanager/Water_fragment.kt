@@ -30,7 +30,7 @@ class Water_fragment : Fragment() {
         val buttonbill = view.findViewById<Button>(R.id.button34)
         buttonbill.setOnClickListener {
             // Create an Intent to navigate to the desired activity
-            val intent = Intent(activity, monthly_water_bill::class.java)
+            val intent = Intent(activity, water_historylist::class.java)
             startActivity(intent)
         }
 

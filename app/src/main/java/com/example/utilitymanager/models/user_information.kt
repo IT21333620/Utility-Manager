@@ -42,6 +42,21 @@ class user_information : AppCompatActivity() {
         dbRef = FirebaseDatabase.getInstance().getReference("Water")
 
         btnSave.setOnClickListener {
+
+            val memberCount = etMembersCount.text.toString()
+            val week = etWeek.text.toString()
+
+            if (!week.matches("week[1-5]".toRegex())) {
+                // Display error message for invalid week format
+                Toast.makeText(this, "Enter the week as 'week1', 'week2', 'week3', 'week4', or 'week5'", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (!memberCount.matches("-?\\d+(\\.\\d+)?".toRegex())) {
+                // Display error message for invalid number
+                Toast.makeText(this, "Enter a valid number for MembersCount", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
             saveWaterData()
 
             val waterForDrinking = etDrinking.text.toString().toDoubleOrNull() ?: 0.0
