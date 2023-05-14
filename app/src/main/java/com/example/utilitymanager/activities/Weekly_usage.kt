@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import com.example.utilitymanager.R
+import android.widget.Toast
 
 class weekly_usage : AppCompatActivity() {
 
@@ -30,10 +31,34 @@ class weekly_usage : AppCompatActivity() {
         resultTextView2.text = "Total water units for week:${totalWaterUnit} units"
 
         var weeklyCost = 0.0
-        if(totalWaterUnit > 0) {
-            weeklyCost = (totalWaterUnit*24+300)
+        if (totalWaterUnit in 0.0..5.0) {
+            weeklyCost = totalWaterUnit*8.0
+        } else if (totalWaterUnit in 6.0..10.0) {
+            weeklyCost = totalWaterUnit*11.0
+        } else if (totalWaterUnit in 11.0..15.0) {
+            weeklyCost = totalWaterUnit*20.0
+        } else if (totalWaterUnit in 16.0..20.0) {
+            weeklyCost = totalWaterUnit*40.0
+        } else if (totalWaterUnit in 21.0..25.0) {
+            weeklyCost = totalWaterUnit*58.0
+        } else if (totalWaterUnit in 26.0..30.0) {
+            weeklyCost = totalWaterUnit*88.0
+        } else if (totalWaterUnit in 31.0..40.0) {
+            weeklyCost = totalWaterUnit*105.0
+        } else if (totalWaterUnit in 41.0..50.0) {
+            weeklyCost = totalWaterUnit*120.0
+        } else if (totalWaterUnit in 51.0..75.0) {
+            weeklyCost = totalWaterUnit*130.0
+        } else if (totalWaterUnit > 75.0) {
+            weeklyCost = totalWaterUnit*140.0
         }
-        resultTextView3.text = "Weekly Cost for week:${weeklyCost} LKR"
+
+        resultTextView3.text = "Weekly Usage Cost for week: ${weeklyCost} Rs./Units"
+
+        if (totalWaterConsumed > 6300) {
+            val message = "You are exceeding estimated average household water consumption for the week"
+            Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+        }
 
 
 
