@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.utilitymanager.R
-import com.example.utilitymanager.models.Item
+import com.example.utilitymanager.dataClasses.Item
 
 
 class CardAdepter (private val itemList: ArrayList<Item>)

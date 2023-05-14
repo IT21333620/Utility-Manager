@@ -14,7 +14,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".models.details_electricity">
+        tools:context=".activities.details_electricity">
 
         <TextView
             android:id="@+id/textView41"

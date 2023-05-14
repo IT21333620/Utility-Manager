@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".models.Weekly_gas_usage">
+    tools:context=".activities.Weekly_gas_usage">
 
     <View
         android:id="@+id/divider16"

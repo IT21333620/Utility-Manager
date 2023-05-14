@@ -18,7 +18,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textView62"
+                android:id="@+id/backgGas"
                 android:layout_width="@dimen/electro_card_width"
                 android:layout_height="@dimen/electro_card_height"
                 android:background="@drawable/squre1"
@@ -60,30 +60,30 @@
                 app:layout_constraintTop_toBottomOf="@+id/elecTitle" />
 
             <Button
-                android:id="@+id/btnElecDelete"
+                android:id="@+id/btnElectroDelete"
                 android:layout_width="@dimen/btn_delete_width"
                 android:layout_height="@dimen/btn_height"
                 android:layout_marginStart="@dimen/electro_item_margin_left"
                 android:layout_marginBottom="@dimen/electro_item_margin_bottom"
                 android:backgroundTint="@color/red_cancel"
                 android:text="@string/delete"
-                app:layout_constraintBottom_toBottomOf="@+id/textView62"
+                app:layout_constraintBottom_toBottomOf="@+id/backgGas"
                 app:layout_constraintStart_toEndOf="@+id/imgItemElec" />
 
             <TextView
-                android:id="@+id/elecUnit"
+                android:id="@+id/NumOfUnits"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ten"
                 android:textColor="@color/orange"
                 android:textSize="@dimen/sub_title"
-                app:layout_constraintEnd_toEndOf="@+id/textView62"
+                app:layout_constraintEnd_toEndOf="@+id/backgGas"
                 app:layout_constraintHorizontal_bias="0.781"
                 app:layout_constraintStart_toEndOf="@+id/textView64"
                 app:layout_constraintTop_toTopOf="@+id/textView64" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btnNewConfigElec"
+                android:id="@+id/btnElectroUpdate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/electro_item_margin_right"
@@ -92,8 +92,8 @@
                 android:contentDescription="@string/next"
                 android:src="@drawable/baseline_arrow_forward_ios_24"
                 app:backgroundTint="@color/orange"
-                app:layout_constraintBottom_toBottomOf="@+id/textView62"
-                app:layout_constraintEnd_toEndOf="@+id/textView62"
+                app:layout_constraintBottom_toBottomOf="@+id/backgGas"
+                app:layout_constraintEnd_toEndOf="@+id/backgGas"
                 app:maxImageSize="@dimen/icon_arrow_size" />
 
 

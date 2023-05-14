@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".models.register">
+    tools:context=".activities.register">
 
     <TextView
         android:id="@+id/circle25"
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="200dp"
         android:text="@string/email"
         android:textColor="@color/black"
         android:textSize="@dimen/reg_sub"
@@ -83,38 +83,37 @@
         android:id="@+id/signUp"
         android:layout_width="114dp"
         android:layout_height="54dp"
-        android:layout_marginBottom="180dp"
+        android:layout_marginTop="64dp"
         android:backgroundTint="@color/orange"
         android:text="@string/reg"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reEnterPass" />
 
     <TextView
         android:id="@+id/textView112"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="148dp"
+        android:layout_marginTop="64dp"
         android:text="@string/acc"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUp" />
 
     <Button
         android:id="@+id/regSignin"
         android:layout_width="153dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="84dp"
         android:background="@color/Transparent"
         android:backgroundTint="@color/black"
         android:text="@string/signin"
         android:textColor="@color/orange"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView112" />
 
     <EditText
         android:id="@+id/regPassword"

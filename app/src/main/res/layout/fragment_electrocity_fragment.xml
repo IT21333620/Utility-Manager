@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Electrocity_fragment" >
+    tools:context=".fragments.Electrocity_fragment" >
 
     <TextView
         android:id="@+id/circle24"
@@ -129,7 +129,7 @@
         app:layout_constraintTop_toTopOf="@+id/sqr7" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnNewConfigElec"
+        android:id="@+id/btnElectroUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"

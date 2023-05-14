@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".models.electricity_warning_notification">
+    tools:context=".notification.electricity_warning_notification">
 
     <TextView
         android:id="@+id/textView114"

@@ -4,26 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".models.available_hrs_in_gas">
-
-    <TextView
-        android:id="@+id/sqr11"
-        android:layout_width="289dp"
-        android:layout_height="253dp"
-        android:layout_marginTop="236dp"
-        android:layout_marginEnd="60dp"
-        android:width="150dp"
-        android:height="150dp"
-        android:background="@drawable/squre1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".activities.available_hrs_in_gas">
 
     <TextView
         android:id="@+id/circle20"
         android:layout_width="212dp"
         android:layout_height="212dp"
         android:layout_marginEnd="288dp"
-        android:layout_marginBottom="616dp"
+        android:layout_marginBottom="768dp"
         android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -32,8 +20,8 @@
         android:id="@+id/circle25"
         android:layout_width="235dp"
         android:layout_height="235dp"
-        android:layout_marginStart="280dp"
-        android:layout_marginBottom="564dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginBottom="728dp"
         android:background="@drawable/circle2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -42,8 +30,8 @@
         android:id="@+id/imageView18"
         android:layout_width="92dp"
         android:layout_height="84dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_gas" />
@@ -52,73 +40,27 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="84dp"
         android:text="@string/gas"
         android:textAlignment="center"
         android:textColor="#F44336"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/elecUnit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="96dp"
-        android:text="@string/awailable_hours_remaining"
-        android:textColor="#F44336"
-        android:textSize="18sp"
-        android:textStyle="bold"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyleViewGas"
+        android:layout_width="409dp"
+        android:layout_height="725dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/sqr11" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/itemWatts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="@string/awailable_hours"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/elecUnit" />
 
-    <Button
-        android:id="@+id/loginSignIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="132dp"
-        android:backgroundTint="@color/orange"
-        android:text="@string/weekgasamount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sqr11" />
-
-    <Button
-        android:id="@+id/btnElecDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="120dp"
-        android:backgroundTint="@color/orange"
-        android:text="@string/gas_detail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginSignIn" />
-
-    <Button
-        android:id="@+id/btnUpdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="88dp"
-        android:backgroundTint="@color/orange"
-        android:text="@string/today_gas_usage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnElecDelete" />
 </androidx.constraintlayout.widget.ConstraintLayout>

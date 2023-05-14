@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fuel_recyclerView">
+    tools:context=".activities.fuel_recyclerView">
 
     <TextView
         android:id="@+id/textView119"

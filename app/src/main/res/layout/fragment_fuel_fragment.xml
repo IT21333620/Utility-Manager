@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fuel_fragment">
+    tools:context=".fragments.fuel_fragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -14,7 +14,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".models.fuel_management">
+        tools:context=".activities.fuel_management">
 
         <TextView
             android:id="@+id/sqr4"

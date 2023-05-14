@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView2"
-        android:name="com.example.utilitymanager.Home_fragment"
+        android:name="com.example.utilitymanager.fragments.Home_fragment"
         android:layout_width="408dp"
         android:layout_height="860dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView13"

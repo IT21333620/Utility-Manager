@@ -13,7 +13,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".models.electricity_history">
+        tools:context=".activities.electricity_history">
 
         <ImageView
             android:id="@+id/imageView30"
