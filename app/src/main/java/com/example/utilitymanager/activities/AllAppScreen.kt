@@ -25,12 +25,12 @@ class AllAppScreen : AppCompatActivity() {
 
         appList = ArrayList()
 
-        appList.add(App(R.drawable.img_youtube_logo, "You Tube"))
-        appList.add(App(R.drawable.img_tiktok, "Tik Tok"))
-        appList.add(App(R.drawable.oip_removebg_preview,"Instagram"))
-        appList.add(App(R.drawable.img_whatsapp,"Whatsapp"))
-        appList.add(App(R.drawable.img_fb_logo, "Facebook"))
-        appList.add(App(R.drawable.img_chrome, "Other"))
+        appList.add(App(R.drawable.img_youtube_logo, "You Tube","R.drawable.img_youtube_logo"))
+        appList.add(App(R.drawable.img_tiktok, "Tik Tok","R.drawable.img_tiktok"))
+        appList.add(App(R.drawable.oip_removebg_preview,"Instagram","R.drawable.oip_removebg_preview"))
+        appList.add(App(R.drawable.img_whatsapp,"Whatsapp","R.drawable.img_whatsapp"))
+        appList.add(App(R.drawable.img_fb_logo, "Facebook","R.drawable.img_fb_logo"))
+        appList.add(App(R.drawable.img_chrome, "Other","R.drawable.img_chrome"))
 
         appAdapter = AppAdapter(appList)
         recyclerView.adapter = appAdapter

@@ -52,6 +52,8 @@ class your_gas_detail : AppCompatActivity() {
                     binding.numBerners.text.clear()
                     binding.burnRate.text.clear()
 
+                    val intent = Intent(this@your_gas_detail, available_hrs_in_gas::class.java)
+                    startActivity(intent)
                     Toast.makeText(this,"Successfully Saved",Toast.LENGTH_SHORT).show()
                 }
                 .addOnFailureListener {

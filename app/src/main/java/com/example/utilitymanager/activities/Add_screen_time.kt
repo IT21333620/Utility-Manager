@@ -10,6 +10,7 @@ import android.widget.Toast
 import com.example.utilitymanager.R
 import com.example.utilitymanager.dataClasses.App
 import com.example.utilitymanager.models.ScreenModel
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -55,23 +56,35 @@ class Add_screen_time : AppCompatActivity() {
         //getting values
         val screTime = screenTime.text.toString()
         val device = devices.text.toString()
+        val appName = intent.getParcelableExtra<App>("app")?.name ?:""
 
         if (screTime.isEmpty()){
-            screenTime.error = "Please enter Screen time"
+            Toast.makeText(this, "Please enter Screen time", Toast.LENGTH_SHORT).show()
         }
         if (device.isEmpty()){
             devices.error = "Please enter Number of Devices"
         }
 
+        val userId = FirebaseAuth.getInstance().currentUser?.uid ?:""
         val screenId = dbRef.push().key!!
 
-        val screen = ScreenModel(screenId, screTime,device)
+        val screen = ScreenModel(
+            screenId,
+            appName,
+            screTime,
+            device,
+            userId
+        )
+
         dbRef.child(screenId).setValue(screen)
             .addOnCompleteListener{
                 Toast.makeText(this,"Data inserted successfully", Toast.LENGTH_LONG).show()
+                screenTime.setText("")
+                devices.setText("")
             }.addOnFailureListener { err ->
                 Toast.makeText(this,"Error ${err.message}", Toast.LENGTH_LONG).show()
             }
 
     }
 }
+
