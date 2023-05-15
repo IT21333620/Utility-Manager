@@ -31,51 +31,49 @@ class Networkmain : AppCompatActivity() {
 
         dbRef = FirebaseDatabase.getInstance().getReference("month_data")
 
-        val buttonutton2 = findViewById<Button>(R.id.button4)
 
         btnSaveData.setOnClickListener {
             saveMonthData()
-            startActivity(Intent(this@Networkmain,availabledataamount::class.java))
         }
 
 
-        val btnSaveData2 = findViewById<Button>(R.id.button280)
-        btnSaveData2.setOnClickListener {
+        //netAvailableData = findViewById(R.id.textView17)
+        val buttonutton3 = findViewById<Button>(R.id.button14)
+        val buttonutton4 = findViewById<Button>(R.id.button19)
 
-            startActivity(Intent(this@Networkmain,availabledataamount::class.java))
+        buttonutton3.setOnClickListener {
+            startActivity(Intent(this@Networkmain, AllAppScreen::class.java))
+        }
+
+        buttonutton4.setOnClickListener {
+            startActivity(Intent(this@Networkmain, DataUsage::class.java))
         }
 
 
     }
 
 
-
-    private fun saveMonthData(){
+    private fun saveMonthData() {
         //getting values
         val DataAmount = dataAmount.text.toString()
 
-        if(DataAmount.isEmpty()){
+        if (DataAmount.isEmpty()) {
             dataAmount.error = "Please enter monthly data amount"
         }
 
         val dataId = dbRef.push().key!!
 
-        val data = DataModel(dataId,DataAmount)
+        val data = DataModel(dataId, DataAmount)
 
         dbRef.child(dataId).setValue(data)
-            .addOnCompleteListener{
+            .addOnCompleteListener {
                 Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_LONG).show()
-            }.addOnFailureListener{ err ->
+            }.addOnFailureListener { err ->
                 Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
             }
 
 
-
-
     }
-
-
-
 
 
 }

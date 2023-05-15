@@ -7,15 +7,28 @@
     tools:context=".models.Networkmain">
 
     <Button
-        android:id="@+id/button280"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="116dp"
+        android:id="@+id/button19"
+        android:layout_width="289dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
         android:backgroundTint="@color/orange"
-        android:text="AllReady Added Data"
+        android:text="Usage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sqr" />
+        app:layout_constraintTop_toBottomOf="@+id/button14"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="289dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/addtodayscreentime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sqr"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/sqr"
