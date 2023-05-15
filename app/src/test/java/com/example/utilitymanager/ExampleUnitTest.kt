@@ -20,4 +20,9 @@ class ExampleUnitTest {
         assertEquals("Invalid Hours", calculateUnit.testCalculateUnit("60", "2", "xyz"))
     }
 
+    @Test
+    fun testGetTotalUnitPrice(){
+        val calculateUnit = CalculateUnit()
+        assertEquals(72000.0, calculateUnit.getTotalUnitPrice())
+    }
 }
