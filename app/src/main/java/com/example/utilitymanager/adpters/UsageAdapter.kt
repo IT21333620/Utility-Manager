@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.utilitymanager.R
 import com.example.utilitymanager.dataClasses.Usage
+import com.example.utilitymanager.models.ScreenModel
 
 class UsageAdapter(private val usageList: ArrayList<ScreenModel>) : RecyclerView.Adapter<UsageAdapter.UsageViewHolder>(){
 

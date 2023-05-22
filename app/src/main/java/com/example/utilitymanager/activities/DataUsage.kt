@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.utilitymanager.R
 import com.example.utilitymanager.adpters.UsageAdapter
 import com.example.utilitymanager.dataClasses.Usage
+import com.example.utilitymanager.models.ScreenModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
