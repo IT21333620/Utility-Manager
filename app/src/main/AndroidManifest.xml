@@ -20,13 +20,7 @@
             android:name=".activities.water_historylist"
             android:exported="false" />
         <activity
-            android:name=".water_weekly_history"
-            android:exported="false" />
-        <activity
             android:name=".activities.Edit_gas_detail"
-            android:exported="false" />
-        <activity
-            android:name=".activities.add_today_gas_usage"
             android:exported="false" />
         <activity
             android:name=".activities.your_gas_detail"
@@ -62,13 +56,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Add_gas_details"
+            android:name=".activities.Monthlydatausage"
             android:exported="false" />
         <activity
-            android:name=".Monthlydatausage"
-            android:exported="false" />
-        <activity
-            android:name=".weeklydatausage"
+            android:name=".activities.weeklydatausage"
             android:exported="false" />
         <activity
             android:name=".activities.details_electricity"
@@ -135,18 +126,11 @@
         <activity
             android:name=".activities.fuel_recyclerView"
             android:exported="false" />
-        <activity
-            android:name=".fuel_History"
-            android:exported="false" />
-        <activity
-            android:name=".activities.Add_today_screentime"
-            android:exported="false"/>
+
         <activity
             android:name=".activities.Delete_Gas"
             android:exported="false" />
-        <activity
-            android:name=".UsageData"
-            android:exported="false" />
+
         <activity
             android:name=".activities.DataUsage"
             android:exported="false" />
